@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+<fx:root fx:id="logoutWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="450.0" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.menu.LogoutComponent">
+   <AnchorPane VBox.vgrow="ALWAYS">
+      <VBox alignment="CENTER" layoutY="50.0" spacing="15.0" styleClass="delete-background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <Text fx:id="warningText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="warningText" text=" ... " textAlignment="CENTER">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Text>
+         <HBox alignment="CENTER" spacing="30.0" translateY="10.0">
+            <Button fx:id="logoutButton" defaultButton="true" mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="90.0" styleClass="confirmButton" text="%confirm">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" cancelButton="true" mnemonicParsing="false" onAction="#cancel" prefHeight="50.0" prefWidth="90.0" styleClass="declineButton" text="%decline">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </HBox>
+      </VBox>
+      <stylesheets>
+         <URL value="@../../style/deleteUser.css" />
+      </stylesheets>
+   </AnchorPane>
+</fx:root>

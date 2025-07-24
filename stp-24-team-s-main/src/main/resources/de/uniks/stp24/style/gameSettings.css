@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Blackadder ITC';
+    src: url("/de/uniks/stp24/fonts/Blackladder.ttf");
+}
+
+@font-face {
+    font-family: 'Tempus Sans ITC';
+    src: url("/de/uniks/stp24/fonts/TempusSans.ttf");
+}
+
+@font-face {
+    font-family: 'Stencil';
+    src: url("/de/uniks/stp24/assets/fonts/Stencil.ttf");
+}
+
+@font-face {
+    font-family: 'Baskerville Old Face';
+    src: url("/de/uniks/stp24/fonts/Baskerville.ttf");
+}
+
+Label {
+    -fx-font-size: 20;
+    -fx-font-family: 'Baskerville Old Face';
+    -fx-text-fill: white;
+}
+
+.background-box {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/game_setting_background.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+}
+
+.title {
+    -fx-font-size: 30;
+    -fx-font-family: "Baskerville Old Face"
+}
+.text-field {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/member_background.png");
+    -fx-background-size: 100% 100%; /* Stretches the image to fill the entire background */
+    -fx-background-repeat: no-repeat;
+    -fx-text-fill: white;
+    -fx-font-size: 28;
+    -fx-padding: 0 0 12px 0;
+    -fx-font-family: 'Baskerville Old Face';
+}
+
+.size-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/blue_button_element.png");
+    -fx-background-size: 100% 100%; /* Stretches the image to fill the entire background */
+    -fx-background-repeat: no-repeat;
+    -fx-text-fill: white;
+    -fx-font-size: 13;
+    -fx-font-family: 'Stencil';
+    -fx-pref-height: 20;
+    -fx-pref-width: 50;
+    -fx-max-height: 20;
+    -fx-max-width: 50;
+    -fx-padding: 2px 0 3px 0;
+}
+
+.confirm-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/button_green.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-pref-height: 45;
+    -fx-pref-width: 95;
+    -fx-max-height: 45;
+    -fx-max-width: 95;
+    -fx-font-family: 'Stencil';
+    -fx-padding: 3px 3px 3px 3px;
+}
+
+.return-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/button_red.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-min-height: 45;
+    -fx-min-width: 95;
+    -fx-pref-height: 45;
+    -fx-pref-width: 95;
+    -fx-max-height: 45;
+    -fx-max-width: 95;
+    -fx-font-family: 'Stencil';
+    -fx-padding: 3px 10px 3px 3px;
+}

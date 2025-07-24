@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<HBox fx:id="backgroundHBox" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#mouseClicked" prefHeight="1050.0" prefWidth="1400.0" style="-fx-background-color: WHITE;" styleClass="background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.controllers.LoadController">
+   <VBox alignment="CENTER" prefHeight="1050.0" prefWidth="1153.0">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <AnchorPane layoutX="347.0" layoutY="-1.0" prefHeight="383.0" prefWidth="495.0" styleClass="calvarioLogo"/>
+      </AnchorPane>
+      <HBox alignment="CENTER" prefHeight="200.0" prefWidth="1277.0">
+         <AnchorPane prefHeight="200.0" prefWidth="1289.0">
+            <AnchorPane layoutX="377.0" layoutY="-8.0" prefHeight="210.0" prefWidth="200.0">
+               <VBox layoutX="83.0" layoutY="48.0" prefHeight="113.0" prefWidth="116.0"
+                     styleClass="spiderbyterLogo"/>
+            </AnchorPane>
+            <AnchorPane layoutX="577.0" prefHeight="200.0" prefWidth="200.0">
+               <VBox layoutX="43.0" layoutY="29.0" prefHeight="113.0" prefWidth="116.0"
+                     styleClass="deadbirdsocietyLogo"/>
+            </AnchorPane>
+         </AnchorPane>
+      </HBox>
+      <Label fx:id="press_any_key" alignment="CENTER" onKeyPressed="#showLoginScreen" prefHeight="53.0" prefWidth="1105.0" style="-fx-text-fill: BLACK;" styleClass="capitals" text="%press.any.key">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+   </VBox>
+</HBox>

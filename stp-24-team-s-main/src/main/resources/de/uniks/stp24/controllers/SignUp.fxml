@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="backgroundAnchorPane" prefHeight="860.0" prefWidth="1280.0" styleClass="background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.controllers.SignUpController">
+   <HBox alignment="CENTER" spacing="25.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="670.0" prefWidth="923.0" styleClass="registerBackground">
+         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <VBox fx:id="cardBackgroundVBox" alignment="BOTTOM_CENTER" prefHeight="500.0" prefWidth="721.0">
+               <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="screenName" text="%register">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="-10.0" left="-55.0" />
+                  </VBox.margin>
+               </Text>
+               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="500.0">
+                  <HBox alignment="CENTER" prefHeight="150.0" prefWidth="500.0" spacing="5.0">
+                     <Pane prefWidth="300.0">
+                        <ToggleButton fx:id="showPasswordToggleButton" layoutX="-20.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" styleClass="eyeButton" />
+                        <VBox layoutX="9.0" layoutY="3.0">
+                           <children>
+                              <TextField fx:id="usernameField" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" promptText="%username" styleClass="textField">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </TextField>
+                              <PasswordField fx:id="passwordField" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" promptText="%password" styleClass="textField">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </PasswordField>
+                              <TextField fx:id="showPasswordText" alignment="CENTER" managed="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" promptText="%password" styleClass="textField">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                              <PasswordField fx:id="repeatPasswordField" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" promptText="%repeat.password" styleClass="textField">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </PasswordField>
+                              <TextField fx:id="showRepeatPasswordText" alignment="CENTER" managed="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" promptText="%repeat.password" styleClass="textField">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </VBox>
+                        <HBox.margin>
+                           <Insets />
+                        </HBox.margin>
+                     </Pane>
+                     <Pane fx:id="captainContainer" prefHeight="150.0" prefWidth="0.0" />
+                     <padding>
+                        <Insets left="-60.0" />
+                     </padding>
+                  </HBox>
+                  <Text fx:id="errorTextField" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </VBox>
+               <HBox alignment="CENTER" prefHeight="80.0" prefWidth="550.0" spacing="25.0">
+                  <VBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <ToggleButton fx:id="enToggleButton" onAction="#setEn" prefHeight="60.0" prefWidth="60.0" styleClass="languageButton_en">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="group" />
+                           </toggleGroup>
+                        </ToggleButton>
+                        <ToggleButton fx:id="deToggleButton" onAction="#setDe" prefHeight="60.0" prefWidth="60.0" styleClass="languageButton_de" toggleGroup="$group">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ToggleButton>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="-120.0" right="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Button alignment="CENTER" cancelButton="true" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="250.0" styleClass="goBackButton" text="%go.back">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="-5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="registerButton" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#register" prefHeight="40.0" prefWidth="250.0" styleClass="confirmButton" text="%register">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="-5.0" />
+                     </HBox.margin>
+                  </Button>
+               </HBox>
+               <padding>
+                  <Insets top="140.0" />
+               </padding>
+            </VBox>
+         </VBox>
+         <HBox.margin>
+            <Insets left="87.0" />
+         </HBox.margin>
+      </AnchorPane>
+      <padding>
+         <Insets bottom="10.0" top="10.0" />
+      </padding>
+   </HBox>
+   <stylesheets>
+      <URL value="@../style/register.css" />
+      <URL value="@../style/styles.css" />
+   </stylesheets>
+</AnchorPane>

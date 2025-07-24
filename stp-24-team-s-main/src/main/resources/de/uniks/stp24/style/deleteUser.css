@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Blackadder ITC';
+    src: url("/de/uniks/stp24/fonts/Blackladder.ttf");
+}
+
+@font-face {
+    font-family: 'Tempus Sans ITC';
+    src: url("/de/uniks/stp24/fonts/TempusSans.ttf");
+}
+
+@font-face {
+    font-family: 'Stencil';
+    src: url("/de/uniks/stp24/assets/fonts/Stencil.ttf");
+}
+
+@font-face {
+    font-family: 'Baskerville Old Face';
+    src: url("/de/uniks/stp24/fonts/Baskerville.ttf");
+}
+
+
+.deletedObject {
+    -fx-font-family: "Stencil";
+    -fx-font-size: 20;
+}
+
+.confirmButton {
+    -fx-font-family: "Stencil";
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/button_green.png");
+    -fx-pref-width: 110px;
+    -fx-padding: 0 2px 6px 0;
+}
+
+.declineButton {
+    -fx-font-family: "Stencil";
+    -fx-font-size: 16;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/button_red.png");
+    -fx-pref-width: 110px;
+    -fx-padding: 0 2px 6px 0;
+}
+
+.warningText {
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 18;
+    -fx-text-fill: black;
+}
+
+.delete-background {
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/popup_background.png");
+    -fx-padding: 0 30px 30px 0;
+}

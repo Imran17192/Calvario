@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" type="AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.fleetManager.FleetManagerComponent">
+    <StackPane fx:id="fleetManagerStackPane" layoutX="-20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <VBox alignment="TOP_CENTER" styleClass="fleet-manager-background">
+            <HBox fillHeight="false" translateY="50.0">
+                <HBox alignment="CENTER" prefWidth="800.0" HBox.hgrow="ALWAYS">
+                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="fleet-manager-title" text="Fleet Manager" translateX="30.0" translateY="-10.0">
+                        <font>
+                            <Font size="35.0" />
+                        </font>
+                    </Text>
+                </HBox>
+                <VBox alignment="TOP_RIGHT" fillWidth="false" HBox.hgrow="NEVER">
+                    <Button fx:id="closeFleetManagerButton" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#close" styleClass="closeButton" />
+                </VBox>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" maxHeight="500.0" prefHeight="400.0" prefWidth="900.0" translateY="60.0" VBox.vgrow="ALWAYS">
+                <StackPane prefHeight="450.0" prefWidth="350.0" styleClass="fleet-manager-list-view-background" translateY="-30.0">
+                    <VBox fx:id="fleetsOverviewVBox" alignment="TOP_CENTER" fillWidth="false" prefHeight="200.0" prefWidth="500.0" translateY="50.0">
+                        <Label fx:id="fleetNameText" styleClass="sub-component-title" text="Fleets" />
+                        <ListView fx:id="fleetsListView" prefHeight="280.0" prefWidth="310.0" styleClass="fleet-manager-list-view" translateY="10.0" />
+                        <Button fx:id="createFleetButton" mnemonicParsing="false" onAction="#createFleet" prefHeight="50.0" prefWidth="130.0" styleClass="fleet-manager-middle-button" text="New Fleet" textAlignment="CENTER" translateY="60.0">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Button>
+                    </VBox>
+                    <VBox fx:id="fleetBuilderVBox" fillWidth="false" prefHeight="450.0" translateY="50.0">
+                        <HBox>
+                            <Button fx:id="showFleetsButton" mnemonicParsing="false" onAction="#showFleets" styleClass="leftTriangleButton" />
+                        </HBox>
+                        <ListView fx:id="blueprintInFleetListView" prefHeight="280.0" prefWidth="310.0" styleClass="fleet-manager-list-view" translateX="21.0" translateY="1.0" />
+                    </VBox>
+                </StackPane>
+                <VBox fx:id="infoButtonVBox" alignment="TOP_CENTER" prefHeight="600.0" prefWidth="75.0" translateX="-5.0">
+                    <ImageView fx:id="shipImageView" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                        <VBox.margin>
+                            <Insets bottom="30.0" />
+                        </VBox.margin>
+                    </ImageView>
+                    <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" VBox.vgrow="ALWAYS">
+                        <Label fx:id="commandLimitLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="130.0" styleClass="fleet-manager-middle-label" text="Label" textAlignment="CENTER" />
+                        <Label fx:id="islandLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="130.0" styleClass="fleet-manager-middle-label" text="Label" textAlignment="CENTER" />
+                        <Button fx:id="shipsButton" mnemonicParsing="false" onAction="#showShips" prefHeight="50.0" prefWidth="130.0" styleClass="fleet-manager-middle-button" text="Ships" textAlignment="CENTER">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="blueprintButton" mnemonicParsing="false" onAction="#showBlueprints" prefHeight="50.0" prefWidth="130.0" styleClass="fleet-manager-middle-button" text="Blueprints" textAlignment="CENTER">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Button>
+                        <VBox.margin>
+                            <Insets top="-20.0" />
+                        </VBox.margin>
+                        <padding>
+                            <Insets top="20.0" />
+                        </padding>
+                    </VBox>
+                    <HBox.margin>
+                        <Insets top="-50.0" />
+                    </HBox.margin>
+                </VBox>
+                <StackPane prefHeight="450.0" prefWidth="350.0" styleClass="fleet-manager-list-view-background" translateX="-10.0" translateY="-30.0">
+                    <VBox fx:id="blueprintsVBox" alignment="TOP_CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" translateY="50.0">
+                        <Label fx:id="shipLabel" styleClass="sub-component-title" text="Blueprints" />
+                        <ListView fx:id="blueprintsListView" prefHeight="280.0" prefWidth="310.0" styleClass="fleet-manager-list-view" translateY="10.0" />
+                    </VBox>
+                    <VBox fx:id="shipsVBox" fillWidth="false" prefHeight="450.0" translateY="50.0">
+                        <HBox>
+                            <Button mnemonicParsing="false" onAction="#showBlueprints" styleClass="leftTriangleButton" />
+                        </HBox>
+                        <ListView fx:id="shipsListView" prefHeight="280.0" prefWidth="310.0" styleClass="fleet-manager-list-view" translateX="21.0" translateY="1.0" />
+                    </VBox>
+                </StackPane>
+                <padding>
+                    <Insets top="50.0" />
+                </padding>
+            </HBox>
+              <Label fx:id="buildShipErrorLabel" styleClass="fleet-manager-error-label" textAlignment="CENTER" textFill="RED">
+            <VBox.margin>
+               <Insets top="20.0" />
+            </VBox.margin>
+            <font>
+               <Font size="20.0" />
+            </font>
+         </Label>
+        </VBox>
+    </StackPane>
+    <stylesheets>
+        <URL value="@../../../style/ingameButtons.css" />
+        <URL value="@../../../style/fleetManager.css" />
+    </stylesheets>
+</fx:root>

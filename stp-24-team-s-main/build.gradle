@@ -1,0 +1,149 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'jacoco'
+    id 'org.openjfx.javafxplugin' version "$javaFxPluginVersion"
+    id 'com.github.johnrengelman.shadow' version "$shadowPluginVersion"
+}
+
+group projectGroup
+version projectVersion
+mainClassName = 'de.uniks.stp24.Main'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://nexus.gluonhq.com/nexus/content/repositories/releases/'
+    }
+}
+
+dependencies {
+    implementation group: 'org.jetbrains', name: 'annotations', version: jetbrainsAnnotationsVersion
+
+    // Frameworks
+
+    implementation group: "org.fulib", name: "fulibFx", version: fulibFxVersion
+    annotationProcessor group: "org.fulib", name: "fulibFx-processor", version: fulibFxVersion
+    implementation group: "com.google.dagger", name: "dagger", version: daggerVersion
+    annotationProcessor group: "com.google.dagger", name: "dagger-compiler", version: daggerVersion
+
+    // JavaFX
+
+    implementation group: "fr.brouillard.oss", name: "cssfx", version: cssFxVersion
+    // for data-url in image cache -> to correctly load avatars from server
+    implementation group: "com.github.robtimus", name: "data-url", version: 2.0
+
+    //ControlsFX
+    // https://mvnrepository.com/artifact/org.controlsfx/controlsfx
+    implementation group: 'org.controlsfx', name: 'controlsfx', version: '11.2.1'
+
+    // REST
+
+    implementation group: "com.squareup.retrofit2", name: "retrofit", version: retrofitVersion
+    implementation group: "com.squareup.retrofit2", name: "adapter-rxjava3", version: retrofitVersion
+    implementation group: "com.squareup.retrofit2", name: "converter-jackson", version: retrofitVersion
+
+    implementation group: "com.fasterxml.jackson.core", name: "jackson-core", version: jacksonVersion
+
+    implementation group: "io.reactivex.rxjava3", name: "rxjava", version: rxJavaVersion
+
+    // WebSocket
+
+    implementation group: "jakarta.websocket", name: "jakarta.websocket-api", version: jakartaWebSocketVersion
+    implementation group: "org.glassfish.tyrus.bundles", name: "tyrus-standalone-client", version: tyrusVersion
+    implementation group: "org.glassfish.tyrus", name: "tyrus-client", version: tyrusVersion
+    implementation group: "org.glassfish.tyrus", name: "tyrus-container-grizzly-client", version: tyrusVersion
+
+    // Testing
+
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: junitJupiterVersion
+    testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: junitJupiterVersion
+
+    testImplementation group: 'org.testfx', name: 'testfx-junit5', version: testFxVersion
+    testImplementation group: 'org.testfx', name: 'openjfx-monocle', version: monocleVersion
+    testImplementation group: 'org.mockito', name: 'mockito-junit-jupiter', version: mockitoVersion
+    testImplementation group: 'org.hamcrest', name: 'hamcrest', version: hamcrestVersion
+
+    testAnnotationProcessor group: 'com.google.dagger', name: 'dagger-compiler', version: daggerVersion
+
+    // UI
+    implementation 'com.gluonhq:charm-glisten:5.0.2'
+
+    // --------------- Jackson ---------------
+
+    // https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-jackson
+    implementation group: 'com.squareup.retrofit2', name: 'converter-jackson', version: '2.9.0'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.13.3'
+}
+
+java {
+    sourceCompatibility = getVersionForMajor(javaSourceVersion)
+    targetCompatibility = getVersionForMajor(javaTargetVersion)
+}
+
+static JavaVersion getVersionForMajor(String version) {
+    return JavaVersion.values().find { (it.majorVersion == version) }
+}
+
+compileJava {
+    options.encoding = "UTF-8"
+    options.sourcepath = sourceSets.main.resources.getSourceDirectories()
+}
+
+javafx {
+    version = javaFxVersion
+    modules = ["javafx.controls", "javafx.graphics", "javafx.fxml", "javafx.media"]
+    if (project.hasProperty('platform')) {
+        platform = project.platform
+    }
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir 'src/main/resources'
+            includes ["**/*.png"]
+        }
+    }
+}
+
+tasks.processResources {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
+
+shadowJar {
+    archiveClassifier = project.findProperty('platform') ?: 'all'
+}
+
+jacoco {
+    toolVersion = jacocoVersion
+}
+
+jacocoTestReport {
+    reports.xml.required = true
+}
+
+test {
+    useJUnitPlatform()
+
+    testLogging {
+        exceptionFormat = 'full'
+        showStackTraces = true
+    }
+
+    if (hasProperty('headless') || System.getenv('CI')) {
+        systemProperties = [
+                'java.awt.headless': 'true',
+                'testfx.robot'     : 'glass',
+                'testfx.headless'  : 'true',
+                'glass.platform'   : 'Monocle',
+                'monocle.platform' : 'Headless',
+                'prism.order'      : 'sw',
+                'prism.text'       : 't2k',
+        ]
+    }
+
+    minHeapSize = "128m" // initial heap size
+    maxHeapSize = "6512m" // maximum heap size
+}

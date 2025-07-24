@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<fx:root alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" styleClass="popup-background" type="VBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.fleetManager.ChangeFleetComponent">
+   <HBox alignment="TOP_RIGHT" prefHeight="40.0" prefWidth="200.0">
+      <Button mnemonicParsing="false" onAction="#close" styleClass="close-button">
+         <HBox.margin>
+            <Insets right="15.0" />
+         </HBox.margin></Button>
+   </HBox>
+   <VBox alignment="TOP_CENTER" fillWidth="false" spacing="5.0" styleClass="popup-info-box" VBox.vgrow="ALWAYS">
+      <Label styleClass="popup-text" text="Choose a fleet">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin></Label>
+      <HBox alignment="CENTER" fillHeight="false" spacing="20.0" styleClass="popup-control-box">
+         <Button fx:id="showLastFleetButton" mnemonicParsing="false" onAction="#showLastFleetName" styleClass="popup-decrement-button" />
+         <Label fx:id="newFleetOfShipNameLabel" styleClass="popup-text" />
+         <Button fx:id="showNextFleetButton" mnemonicParsing="false" onAction="#showNextFleetName" styleClass="popup-increment-button" />
+      </HBox>
+      <Button fx:id="confirmFleetChangeButton" mnemonicParsing="false" onAction="#confirmFleetChange" styleClass="popup-confirm-button" text="Confirm" />
+   </VBox>
+</fx:root>

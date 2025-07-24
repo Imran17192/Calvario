@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.*?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="islandOverviewBackground" stylesheets="@../../style/islandOverview.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.OverviewSitesComponent">
+   <VBox layoutX="136.0" layoutY="16.0" prefHeight="584.0" prefWidth="380.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="16.0">
+      <VBox prefHeight="43.0" prefWidth="400.0" />
+      <HBox alignment="CENTER_LEFT" prefHeight="133.0" prefWidth="400.0">
+         <VBox prefHeight="134.0" prefWidth="46.0" />
+         <VBox alignment="CENTER" prefHeight="134.0" prefWidth="292.0">
+            <Pane fx:id="imagePane" prefHeight="200.0" prefWidth="200.0" styleClass="islandOverviewImage" stylesheets="@../../style/islandOverview.css" />
+         </VBox>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="136.0" prefWidth="398.0">
+         <VBox prefHeight="136.0" prefWidth="42.0" />
+         <VBox alignment="TOP_CENTER" prefHeight="122.0" prefWidth="330.0">
+            <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="330.0">
+               <VBox prefHeight="25.0" prefWidth="31.0" />
+               <TextField fx:id="inputIslandName" alignment="CENTER" prefHeight="25.0" prefWidth="177.0" styleClass="islandNameField" text="%uncharted.island" />
+               <Button fx:id="islandNameButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#setIslandName" prefHeight="20.0" prefWidth="20.0">
+                  <effect>
+                     <DropShadow height="1.0" offsetX="3.0" offsetY="3.0" radius="0.0" spread="1.0" width="0.0">
+                        <color>
+                           <Color opacity="0.25" />
+                        </color>
+                     </DropShadow>
+                  </effect>
+               </Button>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="16.0" prefWidth="330.0">
+               <VBox prefHeight="17.0" prefWidth="39.0" />
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" text="%capacity" wrappingWidth="56.947265625" />
+               <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../../assets/buttons/bandit_medalion.png" />
+               </ImageView>
+               <Text fx:id="island_name" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" text="island_name" wrappingWidth="158.947265625">
+                  <font>
+                     <Font size="11.0" />
+                  </font></Text>
+               <VBox.margin>
+                  <Insets top="-11.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="330.0">
+               <VBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="100.0">
+                  <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="126.0" styleClass="overview-text">
+                     <VBox prefHeight="45.0" prefWidth="29.0" />
+                     <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../icons/islands/crewmates_icon.png" />
+                     </ImageView>
+                     <VBox prefHeight="20.0" prefWidth="5.0" />
+                     <Text fx:id="crewCapacity" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" text="0/20">
+                        <font>
+                           <Font size="11.0" />
+                        </font></Text>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="126.0">
+                     <VBox prefHeight="45.0" prefWidth="29.0" />
+                     <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../icons/islands/capacity_icon.png" />
+                     </ImageView>
+                     <VBox prefHeight="20.0" prefWidth="5.0" />
+                     <Text fx:id="resCapacity" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" text="0/400">
+                        <font>
+                           <Font size="11.0" />
+                        </font></Text>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText"
+                           text="%island.overview.upgrades">
+                        <HBox.margin>
+                           <Insets left="30.0" right="5.0"/>
+                        </HBox.margin>
+                     </Text>
+                     <Button fx:id="upgradeButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                             minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#showUpgrades"
+                             prefHeight="32.0" prefWidth="30.0" style="-fx-background-color: transparent;"
+                             styleClass="islandOverviewUpgradesButton">
+                        <padding>
+                           <Insets left="20.0"/>
+                        </padding>
+                        <effect>
+                           <DropShadow height="1.0" offsetX="3.0" offsetY="3.0" radius="0.0" spread="1.0" width="0.0">
+                              <color>
+                                 <Color opacity="0.25"/>
+                              </color>
+                           </DropShadow>
+                        </effect>
+                     </Button>
+                  </HBox>
+               </VBox>
+               <GridPane alignment="CENTER" hgap="20.0" prefWidth="159.0" vgap="10.0">
+                  <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="62.0"/>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="77.0"/>
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES"/>
+                     <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES"/>
+                  </rowConstraints>
+                  <effect>
+                     <DropShadow blurType="GAUSSIAN" height="1.0" offsetX="3.0" offsetY="3.0" radius="0.0" spread="1.0"
+                                 width="0.0">
+                        <color>
+                           <Color opacity="0.25954198837280273"/>
+                        </color>
+                     </DropShadow>
+                  </effect>
+                  <padding>
+                     <Insets left="10.0"/>
+                  </padding>
+                  <Button fx:id="detailsButton" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                          mnemonicParsing="false" onAction="#showDetails" prefHeight="25.0" prefWidth="55.0"
+                          styleClass="overviewButtons" text="%DETAILS" GridPane.columnIndex="1"/>
+                  <Button fx:id="buildingsButton" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                          mnemonicParsing="false" onAction="#showBuildings" prefHeight="25.0" prefWidth="55.0"
+                          styleClass="overviewButtons" text="%BUILDINGS" GridPane.columnIndex="1"
+                          GridPane.rowIndex="1"/>
+                  <Button fx:id="sitesButton" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                          mnemonicParsing="false" onAction="#showSites" prefHeight="25.0" prefWidth="55.0"
+                          styleClass="overviewButtons" text="%SITES" GridPane.rowIndex="1"/>
+                  <Button fx:id="jobsButton" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                          mnemonicParsing="false" onAction="#showJobs" prefHeight="25.0" prefWidth="55.0"
+                          styleClass="overviewButtons" text="%JOBS"/>
+               </GridPane>
+               <VBox.margin>
+                  <Insets top="12.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox.margin>
+               <Insets top="16.0" />
+            </HBox.margin>
+         </VBox>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <VBox prefHeight="17.0" prefWidth="400.0" />
+      <HBox prefHeight="115.0" prefWidth="400.0">
+         <StackPane fx:id="sitesContainer" prefHeight="150.0" prefWidth="312.0">
+            <HBox.margin>
+               <Insets top="20.0" />
+            </HBox.margin></StackPane>
+      </HBox>
+   </VBox>
+   <Pane layoutX="360.0" layoutY="18.0" prefHeight="40.0" prefWidth="40.0" styleClass="islandOverviewCloseButton" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+      <Button fx:id="closeOverviewButton" mnemonicParsing="false" onMouseClicked="#closeOverview" prefHeight="40.0" prefWidth="42.0" style="-fx-background-color: transparent;" styleClass="islandOverviewCloseButton" />
+   </Pane>
+   <Pane fx:id="islandFlag" layoutX="151.2" layoutY="5.0" prefHeight="91.0" prefWidth="110.0" AnchorPane.leftAnchor="145.0" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="5.0">
+      <effect>
+         <DropShadow height="1.0" offsetX="5.0" offsetY="5.0" radius="0.0" spread="1.0" width="0.0">
+            <color>
+               <Color opacity="0.25190839171409607" />
+            </color>
+         </DropShadow>
+      </effect></Pane>
+</fx:root>

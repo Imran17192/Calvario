@@ -1,0 +1,438 @@
+@font-face {
+    font-family: 'Blackadder ITC';
+    src: url("/de/uniks/stp24/fonts/Blackladder.ttf");
+}
+
+@font-face {
+    font-family: 'Tempus Sans ITC';
+    src: url("/de/uniks/stp24/fonts/TempusSans.ttf");
+}
+
+@font-face {
+    font-family: 'Stencil';
+    src: url("/de/uniks/stp24/assets/fonts/Stencil.ttf");
+}
+
+@font-face {
+    font-family: 'Baskerville Old Face';
+    src: url("/de/uniks/stp24/fonts/Baskerville.ttf");
+}
+
+Label {
+    -fx-font-family: 'Tempus Sans ITC';
+    -fx-opacity: 1;
+    -fx-text-fill: black;
+}
+
+.fleet-manager-title {
+    -fx-font-family: 'Baskerville Old Face';
+    -fx-font-size: 48;
+    -fx-opacity: 1;
+}
+
+.sub-component-title {
+    -fx-font-family: 'Baskerville Old Face';
+    -fx-text-fill: white;
+    -fx-font-size: 24;
+    -fx-opacity: 1;
+}
+
+.fleet-manager-background {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/Fleet_Manager_Background.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.fleet-manager-list-view-background {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/Fleet_Manager_Window.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.fleet-manager-list-view .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color: transparent;
+    -fx-background-size: auto;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-min-height: 20px;
+    -fx-min-width: 20px;
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-image: url("/de/uniks/stp24/icons/scroller.png");
+}
+
+.fleet-manager-list-view .scroll-bar:vertical .increment-button .increment-arrow,
+.fleet-manager-list-view .scroll-bar .decrement-button .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+}
+
+.fleet-manager-list-view {
+    -fx-background-color: transparent;
+}
+
+.fleet-manager-list-view .scroll-bar .thumb,
+.fleet-manager-list-view .scroll-bar:horizontal,
+.fleet-manager-list-view .scroll-bar:horizontal .decrement-arrow,
+.fleet-manager-list-view .scroll-bar:horizontal .increment-arrow,
+.fleet-manager-list-view .scroll-bar:horizontal .decrement-button,
+.fleet-manager-list-view .scroll-bar:horizontal .increment-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.fleet-manager-list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/red_frame.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.fleet-manager-list-view .corner {
+    -fx-background-color: transparent;
+}
+
+.fleet-manager-list-view .scroll-bar:vertical {
+    -fx-background-color: black;
+    -fx-background-insets: 20px 5px 0px 5px;
+    /*-fx-background-insets: 0;*/
+    -fx-background-radius: 5px;
+    -fx-pref-width: 15px;
+    -fx-max-width: 15px
+}
+
+.fleet-manager-list-view .list-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-image: none;
+}
+
+.owned-ship-sub-component-background {
+
+}
+
+.owned-ship-sub-component-increment-button {
+
+}
+
+.owned-ship-sub-component-decrement-button {
+
+}
+
+.owned-ship-sub-component-build-button {
+
+}
+
+.blueprint-sub-component-background {
+
+}
+
+.fleet-manager-button {
+
+}
+
+.blueprint-sub-component-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/confirm_islandName2.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.fleet-delete-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/delete_button.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.fleet-edit-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/change_islandName.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.fleet-manager-middle-label {
+    -fx-font-family: 'Tempus Sans ITC';
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/button_element.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.fleet-manager-middle-button {
+    -fx-font-family: 'Tempus Sans ITC';
+    -fx-font-size: 22;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/button_element.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-pref-widht: 130;
+    -fx-pref-height: 50;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.fleet-manager-error-label {
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-text-fill: red;
+    -fx-font-size: 20;
+}
+
+
+.build-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/delete_button.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.fleet-increment-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/add.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.fleet-decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/minus.png");
+    -fx-background-size: 100% 100%;
+}
+
+.green-build-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/build_button.png");
+    -fx-background-size: 100% 100%;
+}
+
+/*.tooltip-background {*/
+/*    -fx-background-color: transparent;*/
+/*    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/pause_menu_background.png");*/
+/*    -fx-background-size: 100% 100%;*/
+/*}*/
+
+.tooltip-list-view .list-cell,
+.tooltip-list-view {
+    -fx-background-color: transparent;
+    -fx-background-image: none
+}
+
+.tooltip-list-view .list-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-image: none;
+}
+
+
+
+.tooltip {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/pause_menu_background.png");
+    -fx-background-size: 100% 100%;
+}
+
+.tooltip-title {
+    -fx-font-family: 'Tempus Sans ITC';
+    -fx-font-size: 15;
+}
+
+.tooltip-subtitle {
+    -fx-font-family: 'Tempus Sans ITC';
+    -fx-font-size: 13;
+    -fx-opacity: 1;
+    text-decoration: underline;
+}
+
+.list-view * {
+    -fx-font-size: 13;
+    -fx-text-fill: black;
+}
+
+.tooltip-list-view .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color: transparent;
+    -fx-background-size: auto;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-min-height: 20px;
+    -fx-min-width: 20px;
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-background-image: url("/de/uniks/stp24/icons/scroller.png");
+}
+
+.tooltip-list-view .scroll-bar:vertical .increment-button .increment-arrow,
+.tooltip-list-view .scroll-bar .decrement-button .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+}
+
+.tooltip-list-view {
+    -fx-background-color: transparent;
+}
+
+.tooltip-list-view .scroll-bar .thumb,
+.tooltip-list-view .scroll-bar:horizontal,
+.tooltip-list-view .scroll-bar:horizontal .decrement-arrow,
+.tooltip-list-view .scroll-bar:horizontal .increment-arrow,
+.tooltip-list-view .scroll-bar:horizontal .decrement-button,
+.tooltip-list-view .scroll-bar:horizontal .increment-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.tooltip-list-view .corner {
+    -fx-background-color: transparent;
+}
+
+.tooltip-list-view .scroll-bar:vertical {
+    -fx-background-color: black;
+    -fx-background-radius: 5px;
+    -fx-pref-width: 15px;
+    -fx-max-width: 15px
+}
+
+.tooltip-list-view .list-cell {
+    -fx-padding: 0 0 0 0;
+}
+
+.details-tooltip {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/pause_menu_background.png");
+    -fx-background-size: 100% 100%;
+}
+
+.info-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/icons/information-button2.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.change-fleet-button {
+    -fx-font-family: 'Tempus Sans ITC';
+    -fx-font-size: 13;
+    -fx-text-fill: white;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/blue_button_element.png");
+    -fx-padding: 0px 0px 2px 0px;
+    -fx-pref-height: 30;
+    -fx-pref-width: 86;
+}
+
+.popup-background {
+    -fx-pref-width: 400;
+    -fx-pref-height: 225;
+    -fx-max-width: 400;
+    -fx-max-height: 225;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/deletion_window.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+}
+
+.popup-confirm-button {
+    -fx-font-family: 'Tempus Sans ITC';
+    -fx-font-size: 13;
+    -fx-text-fill: white;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/blue_button_element.png");
+    -fx-padding: 0px 0px 2px 0px;
+    -fx-pref-height: 30;
+    -fx-pref-width: 86;
+}
+
+.popup-text {
+    -fx-font-size: 21;
+}
+
+.popup-increment-button {
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/minimal_arrow_right.png");
+
+    -fx-max-heigt: 35px;
+    -fx-max-width: 16px;
+    -fx-min-height: 35px;
+    -fx-min-width: 16px;
+}
+
+.popup-decrement-button {
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/minimal_arrow_left.png");
+
+    -fx-max-heigt: 35px;
+    -fx-max-width: 16px;
+    -fx-min-height: 35px;
+    -fx-min-width: 16px;
+}
+
+.close-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/close_window_button.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-translate-x: -8px;
+    -fx-translate-y: -5px;
+}
+
+.popup-info-box {
+    -fx-translate-y: -20px;
+    -fx-translate-x: -15px;
+}
+
+.popup-control-box {
+    -fx-padding: 5px 10px 5px 10px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}

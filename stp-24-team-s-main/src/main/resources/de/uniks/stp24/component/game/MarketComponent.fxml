@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0"
+         prefWidth="435.0" styleClass="marketBackground" stylesheets="@../../style/market.css" type="StackPane"
+         xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="de.uniks.stp24.component.game.MarketComponent">
+   <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <StackPane.margin>
+         <Insets top="10.0"/>
+      </StackPane.margin>
+      <Button fx:id="closeMarketOverviewButton" layoutX="374.0" layoutY="4.0" mnemonicParsing="false"
+              onAction="#closeMarketOverview" prefHeight="49.0" prefWidth="51.0" styleClass="closeWindowButton"/>
+      <Text layoutX="156.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="marketTitle"
+            text="Market" wrappingWidth="186.13670349121094"/>
+      <Label fx:id="sellingPriceLabel" layoutX="120.0" layoutY="202.0" minWidth="50.0" prefHeight="46.0"
+             prefWidth="80.0" styleClass="javaneseText"/>
+      <Label fx:id="buyingPriceLabel" layoutX="263.0" layoutY="198.0" minWidth="50.0" prefHeight="46.0"
+             prefWidth="80.0" styleClass="javaneseText"/>
+      <Button fx:id="sellButton" layoutX="100.0" layoutY="236.0" mnemonicParsing="false" onAction="#sellItem"
+              prefHeight="25.0" prefWidth="83.0" styleClass="defaultButton" text="SELL" textFill="WHITE"/>
+      <Button fx:id="buyButton" layoutX="250.0" layoutY="236.0" mnemonicParsing="false" onAction="#buyItem"
+              prefHeight="25.0" prefWidth="83.0" styleClass="defaultButton" text="BUY" textFill="WHITE"/>
+      <AnchorPane layoutX="175.0" layoutY="212.0" prefHeight="25.0" prefWidth="28.0" styleClass="creditCoinIcon"/>
+      <ListView fx:id="resourcesListView" layoutX="63.0" layoutY="100.0" orientation="HORIZONTAL" prefHeight="92.0"
+                prefWidth="313.0" style="-fx-background-color: transparent;" styleClass="listViewStyle"/>
+      <AnchorPane layoutX="155.0" layoutY="167.0" prefHeight="36.0" prefWidth="90.0" styleClass="amountBox">
+         <Button fx:id="decrementNumberOfGoods" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="80.0"
+                 layoutY="20.0" minHeight="15.0" minWidth="20.0" mnemonicParsing="false"
+                 onAction="#decrementAmount" prefHeight="15.0" prefWidth="20.0" styleClass="downArrowButton"/>
+         <Button fx:id="incrementNumberOfGoods" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="80.0"
+                 layoutY="4.0" minHeight="15.0" minWidth="20.0" mnemonicParsing="false"
+                 onAction="#incrementAmount" prefHeight="15.0" prefWidth="20.0" styleClass="upArrowButton"/>
+         <Label fx:id="numberOfGoodsLabel" layoutX="11.0" layoutY="8.0" prefHeight="15.0" prefWidth="60.0"
+                styleClass="baskervilleOldFace" textFill="WHITE">
+            <font>
+               <Font size="16.0"/>
+            </font>
+         </Label>
+      </AnchorPane>
+      <ListView fx:id="seasonalTradesListView" layoutX="70.0" layoutY="351.0" prefHeight="163.0" prefWidth="286.0"
+                style="-fx-background-color: transparent;" styleClass="seasonalTradesListView">
+         <padding>
+            <Insets top="10.0"/>
+         </padding>
+      </ListView>
+      <Label fx:id="userCreditsLabel" layoutX="140.0" layoutY="56.0" prefHeight="46.0" prefWidth="100.0"
+             style="-fx-background-color: transparent;" styleClass="javaneseText" text="Label"/>
+      <Label fx:id="marketFeeLabel" layoutX="270.0" layoutY="56.0" prefHeight="46.0" prefWidth="89.0"
+             styleClass="javaneseText" text="Label"/>
+      <AnchorPane layoutX="230.0" layoutY="65.0" prefHeight="38.0" prefWidth="35.0" styleClass="marketFeeIcon"/>
+      <ImageView fx:id="selectedIconImage" fitHeight="30.0" fitWidth="32.0" layoutX="115.0" layoutY="171.0"
+                 pickOnBounds="true" preserveRatio="true"/>
+      <AnchorPane layoutX="320.0" layoutY="211.0" prefHeight="25.0" prefWidth="28.0" styleClass="creditCoinIcon"/>
+      <AnchorPane layoutX="100.0" layoutY="65.0" prefHeight="38.0" prefWidth="35.0" styleClass="creditCoinIcon"/>
+      <ToggleButton fx:id="everySeasonButton" layoutX="280.0" layoutY="173.0" mnemonicParsing="false"
+                    onAction="#createSeasonalTrades" prefHeight="36.0" prefWidth="66.0"
+                    styleClass="everySeasonButtonDesign" text=" EVERY&#10;SEASON&#10;" textFill="WHITE">
+         <font>
+            <Font size="5.0"/>
+         </font>
+      </ToggleButton>
+      <Label layoutX="85.0" layoutY="201.0" styleClass="javaneseText" text="Get:"/>
+      <Label layoutX="230.0" layoutY="199.0" styleClass="javaneseText" text="Pay:"/>
+      <Text layoutX="118.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="seasonTitle"
+            text="SEASONAL TRADES" wrappingWidth="258.13670349121094">
+         <font>
+            <Font size="8.0"/>
+         </font>
+      </Text>
+   </AnchorPane>
+</fx:root>

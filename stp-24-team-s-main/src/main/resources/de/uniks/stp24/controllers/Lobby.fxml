@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="backgroundAnchorPane" prefHeight="860.0" prefWidth="1280.0" styleClass="background"
+            stylesheets="@../style/lobby.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="de.uniks.stp24.controllers.LobbyController">
+   <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                  prefHeight="700.0" prefWidth="1280.0" styleClass="lobbyBackground">
+         <ListView fx:id="playerListView" layoutX="539.0" layoutY="157.0" prefHeight="208.0" prefWidth="269.0"
+                   styleClass="lobbyList"/>
+         <Pane fx:id="lobbyMessagePane" disable="true" layoutX="-2.0" layoutY="-85.0" opacity="0.5"
+               prefHeight="869.0" prefWidth="1280.0" style="-fx-background-color: GRAY;" visible="false"/>
+         <StackPane fx:id="lobbyElement" alignment="TOP_CENTER" layoutX="546.0" layoutY="426.0"
+                    maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                    prefHeight="99.0" prefWidth="212.0" AnchorPane.bottomAnchor="175.0"
+                    AnchorPane.leftAnchor="546.0" AnchorPane.rightAnchor="522.0" AnchorPane.topAnchor="426.0"/>
+         <Pane fx:id="captainContainer" layoutX="813.0" layoutY="339.0" prefHeight="13.0" prefWidth="135.0"
+               AnchorPane.bottomAnchor="508.0" AnchorPane.leftAnchor="813.0" AnchorPane.rightAnchor="332.0"
+               AnchorPane.topAnchor="339.0"/>
+         <Text fx:id="gameNameField" layoutX="532.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               styleClass="gameName" text="\%GameName" textAlignment="CENTER" wrappingWidth="243.19580078125">
+            <font>
+               <Font size="31.0"/>
+            </font>
+         </Text>
+         <Text fx:id="playerReadinessText" layoutX="617.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               styleClass="readyText" text="%pirates" textAlignment="CENTER">
+            <font>
+               <Font size="10.0"/>
+            </font>
+         </Text>
+         <Pane fx:id="lobbyMessageElement" layoutX="502.0" layoutY="208.0" AnchorPane.bottomAnchor="342.0"
+               AnchorPane.leftAnchor="502.0" AnchorPane.rightAnchor="478.0" AnchorPane.topAnchor="208.0">
+            <VBox alignment="CENTER" prefHeight="150.0" prefWidth="300.0" spacing="20.0"
+                  styleClass="backgroundLightYellow">
+               <Text fx:id="messageText" strokeType="OUTSIDE" strokeWidth="0.0"
+                     styleClass="backgroundLightYellow" text="%host.has.left.lobby" textAlignment="CENTER"
+                     wrappingWidth="226.0">
+                  <font>
+                     <Font size="16.0"/>
+                  </font>
+               </Text>
+               <Button fx:id="returnButton" mnemonicParsing="false" onAction="#goBack" prefHeight="32.0"
+                       prefWidth="83.0" styleClass="deleteAndSaveButton" text="Return"/>
+            </VBox>
+         </Pane>
+      </AnchorPane>
+   </StackPane>
+</AnchorPane>

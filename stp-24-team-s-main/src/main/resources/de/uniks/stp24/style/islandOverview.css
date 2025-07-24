@@ -1,0 +1,319 @@
+@font-face {
+    font-family: 'Baskerville';
+    src: url("/de/uniks/stp24/fonts/Baskerville.ttf");
+}
+
+.headerText{
+    -fx-font-family: "Blackadder ITC";
+    -fx-font-size: 30;
+}
+
+.headerTextUpgrade{
+    -fx-font-family: "Blackadder ITC";
+    -fx-font-size: 20;
+}
+
+.headerTextBuildings{
+    -fx-font-family: "Blackadder ITC";
+    -fx-font-size: 22;
+}
+
+.headerTextExplanation{
+    -fx-font-family: "Blackadder ITC";
+    -fx-font-size: 17;
+}
+
+.islandNameField {
+    -fx-background-color: transparent;
+    -fx-font-family: "Blackadder ITC";
+    -fx-font-size: 22;
+}
+
+.islandNameField:disabled {
+    -fx-opacity: 1.0;
+}
+
+
+/* Buildings Window */
+.buildingsOverviewBackground{
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/site_building_build_overview_window.png");
+    -fx-background-size: 100% 100%;
+}
+
+.buildingButton{
+    -fx-pref-width:40px;
+    -fx-pref-height: 40px;
+}
+
+/* Buildings Details */
+.buildingDetailsBackground{
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/building_component.png");
+    -fx-background-size: 100% 100%;
+}
+
+.tableHeadingText{
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-text-fill: black;
+    -fx-background-color: "TRANSPARENT";
+    -fx-font-weight: none;
+    -fx-font-size: 12;
+}
+
+.buildingName{
+    -fx-font-family: "Blackadder ITC";
+    -fx-font-size: 18;
+}
+
+.resourceList .list-cell {
+    -fx-background-color: transparent;
+    -fx-font-size: 10;
+    -fx-cell-size: 5;
+    -fx-padding: 0 -205 0 0;
+}
+
+.resourceList .scroll-bar{
+    -fx-background-color: transparent;
+}
+
+
+
+/* explanation details */
+.explanationBackground{
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/details_background.png");
+    -fx-background-size: 100% 100%;
+}
+
+
+/* side details */
+.siteOverviewBackground{
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/production_site_overview_window.png");
+    -fx-background-size: 100% 100%;
+}
+
+.islandOverviewBackground{
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/island-overview.png");
+    -fx-background-size: 100% 100%;
+}
+
+.buildNewBuilding{
+    -fx-background-image: url("/de/uniks/stp24/icons/buildings/empty_building_element.png");
+    -fx-background-size: 100% 100%;
+}
+
+.islandOverviewCloseButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/close_window_button.png");
+    -fx-background-size: 100% 100%;
+}
+
+.islandOverviewUpgradesButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/upgrades_button.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-pref-height: 20;
+    -fx-pref-width: 20;
+}
+
+.islandUpgradeBackground{
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/island_upgrades.png");
+    -fx-background-size: 100% 100%;
+}
+
+.goBackUpgrade{
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/arrow_left.png");
+    -fx-background-size: 100% 100%;
+}
+
+.goBackBuilding{
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/arrow_left.png");
+    -fx-background-size: 100% 100%;
+}
+
+.goNextBuilding{
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/arrow_right.png");
+    -fx-background-size: 100% 100%;
+}
+
+.checkUpgrade{
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/accept_button.png");
+    -fx-background-size: 100% 100%;
+}
+
+.overviewButtons{
+    -fx-font-size: 10;
+    -fx-font-family: "Baskerville";
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/button_element.png");
+    -fx-background-size: 100% 100%;
+    -fx-pref-width: 70;
+    -fx-pref-height: 25;
+}
+/* warning screen*/
+.deletionWindowBackground{
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/deletion_window.png");
+    -fx-background-size: 100% 100%;
+}
+.resourceList .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+}
+
+.explanation-window .list-cell {
+    -fx-background-color: transparent;
+}
+
+.resourceList .scroll-bar{
+    -fx-background-color: transparent;
+}
+
+.islandOverviewImage{
+    -fx-background-image: url("/de/uniks/stp24/icons/island.images/regular_image.png");
+    -fx-background-size: cover;
+}
+
+.jobProgressListView {
+    -fx-background-color: transparent;
+}
+
+.jobProgressListView .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: -5 -5 0 0;
+}
+
+.jobProgressListView .scroll-bar:vertical,
+.sitesScrollPane .scroll-bar:vertical{
+    -fx-background-image: url("/de/uniks/stp24/icons/other/black_square.png");
+    -fx-background-position: center;
+    -fx-background-repeat: repeat-y;
+    -fx-background-color: transparent;
+    -fx-background-size: 50% 100%;
+}
+
+.variableExplanationListView .scroll-bar:vertical,
+.sitesScrollPane .scroll-bar:vertical,
+.resourceList .scroll-bar:vertical  {
+    -fx-background-image: url("/de/uniks/stp24/icons/other/black_square.png");
+    -fx-background-position: center;
+    -fx-background-repeat: repeat-y;
+    -fx-background-color: transparent;
+    -fx-background-size: 15% 100%;
+}
+
+.jobProgressListView .virtual-flow .scroll-bar:vertical .thumb,
+.resourceList .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/icons/other/scroller.png");
+}
+
+.jobProgressListView .scroll-bar:vertical .increment-button,
+.jobProgressListView .scroll-bar:vertical .decrement-button,
+.sitesScrollPane .scroll-bar:vertical .increment-button,
+.sitesScrollPane .scroll-bar:vertical .decrement-button,
+.resourceList .scroll-bar:vertical .increment-button,
+.resourceList .scroll-bar:vertical .decrement-button {
+    -fx-scale-x: 0;
+    -fx-scale-y: 0;
+}
+
+.sitesListView {
+    -fx-background-color: transparent;
+}
+
+.sitesListView .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 1;
+}
+
+.jobCostsListView {
+    -fx-background-color: transparent;
+    -fx-focus-traversable: false;
+}
+
+.jobCostsListView .scroll-bar:horizontal {
+    -fx-scale-y: 0;
+}
+
+.jobCostsListView .scroll-bar:vertical {
+    -fx-scale-x: 0;
+}
+
+.jobCostsListView .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: -13 -205 0 0;
+}
+
+
+.jobProgressBar .track {
+    -fx-background-color: transparent;
+    -fx-focus-traversable: false;
+    -fx-background-image: url("/de/uniks/stp24/icons/other/progressBar.png");
+    -fx-background-size: 100% 100%;
+}
+
+.jobProgressBar .bar {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/icons/other/progressBar_inside.png");
+    -fx-background-position: right;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 98% 50%;
+}
+
+.jobNumerator {
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-background-color: transparent;
+    -fx-font-weight: none;
+    -fx-font-size: 16;
+}
+
+.deleteJobButton {
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-image: url("/de/uniks/stp24/icons/buttons/cancel_button.png");
+}
+
+.showJobInfoButton {
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-image: url("/de/uniks/stp24/icons/buttons/lupe.png");
+}
+
+.sitesScrollPane {
+    -fx-background-color: transparent;
+}
+
+.sitesScrollPane .viewport {
+    -fx-background-color: transparent;
+}
+
+.upgradeButtonActive {
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/upgrade_button_on.png");
+}
+
+.upgradeButtonInactive {
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/upgrade_button_off.png");
+}
+
+.upgradeButtonCancelJob {
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/upgrade_button_cancel_job.png");
+}
+
+.healthText{
+    /*-fx-font-family: "Tempus Sans ITC";*/
+    -fx-text-fill: lime;
+    -fx-background-color: "lime";
+    -fx-font-weight: none;
+    -fx-font-size: 18;
+}
+
+
+

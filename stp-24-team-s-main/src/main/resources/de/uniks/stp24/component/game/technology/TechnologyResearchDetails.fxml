@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" type="VBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.technology.TechnologyResearchDetailsComponent">
+   <padding>
+      <Insets bottom="20.0" left="40.0" right="60.0" top="10.0" />
+   </padding>
+   <HBox alignment="CENTER_LEFT" spacing="5.0">
+      <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../../icons/resources/research.png" />
+      </ImageView>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="research-cost-title" text="Scout Reports costs">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+   </HBox>
+   <Label fx:id="base" styleClass="research-cost-details" text="Base">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <VBox fx:id="costVBox">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="10.0" />
+      </padding>
+   </VBox>
+   <Label fx:id="total" styleClass="research-cost-details" text="Total">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+</fx:root>

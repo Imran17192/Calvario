@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="500.0" type="AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.StorageOverviewComponent">
+   <VBox focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="500.0" styleClass="storageOverviewBackground" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <HBox alignment="CENTER" prefHeight="200.0" prefWidth="400.0">
+         <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="139.0" prefWidth="500.0">
+            <TextFlow cacheShape="false" layoutX="102.0" layoutY="80.0" maxHeight="-Infinity" prefHeight="46.0" textAlignment="CENTER" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="90.0">
+               <Text fx:id="empireNameLabel" fill="#fffdfd" strokeMiterLimit="0.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="empireName" text="Evil Buccaneers" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="185.8294677734375">
+                  <font>
+                     <Font size="1.0" />
+                  </font>
+               </Text>
+            </TextFlow>
+            <Button fx:id="closeStorageOverviewButton" layoutX="125.33333969116211" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#closeStorageOverview" prefHeight="30.0" prefWidth="30.0" styleClass="closeButton" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="50.0" />
+         </AnchorPane>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="260.0" style="-fx-background-color: transparent;">
+         <VBox.margin>
+            <Insets bottom="20.0" right="20.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <Label styleClass="storageText" text="%storage">
+            <VBox.margin>
+               <Insets bottom="15.0" />
+            </VBox.margin>
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <HBox prefHeight="30.0" prefWidth="220.0" spacing="10.0">
+            <VBox.margin>
+               <Insets left="50.0" />
+            </VBox.margin>
+            <HBox alignment="CENTER_LEFT" prefWidth="210.0">
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" text="%overall">
+                  <HBox.margin>
+                     <Insets left="55.0" />
+                  </HBox.margin>
+               </Text>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" text="%proSeason" />
+         </HBox>
+         <ListView fx:id="resourceListView" focusTraversable="false" prefHeight="300.0" prefWidth="220.0" style="-fx-background-color: transparent;" styleClass="resourceList">
+            <VBox.margin>
+               <Insets left="85.0" />
+            </VBox.margin>
+         </ListView>
+      </VBox>
+   </VBox>
+   <stylesheets>
+      <URL value="@../../style/storageOverview.css" />
+      <URL value="@../../style/ingameButtons.css" />
+   </stylesheets>
+</fx:root>

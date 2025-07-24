@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Blackadder ITC';
+    src: url("/de/uniks/stp24/fonts/Blackladder.ttf");
+}
+
+@font-face {
+    font-family: 'Tempus Sans ITC';
+    src: url("/de/uniks/stp24/fonts/TempusSans.ttf");
+}
+
+@font-face {
+    font-family: 'Stencil';
+    src: url("/de/uniks/stp24/assets/fonts/Stencil.ttf");
+}
+
+@font-face {
+    font-family: 'Baskerville Old Face';
+    src: url("/de/uniks/stp24/fonts/Baskerville.ttf");
+}
+
+Label {
+    -fx-font-family: 'Baskerville Old Face';
+    -fx-text-fill: white;
+}
+
+.background-box {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/background_BrowseGame.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+}
+
+.edit-button {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/empireConfiguration/edit_button.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-pref-height: 25px;
+    -fx-pref-width: 25px;
+    -fx-min-height: 25px;
+    -fx-min-width: 25px;
+    -fx-max-height: 25px;
+    -fx-max-width: 25px;
+}
+
+.logout-button {
+    -fx-background-color: tan;
+    /*-fx-background-image: url("/de/uniks/stp24/assets/empireConfiguration/logout_button.png");*/
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-pref-height: 25px;
+    -fx-pref-width: 25px;
+    -fx-min-height: 25px;
+    -fx-min-width: 25px;
+    -fx-max-height: 25px;
+    -fx-max-width: 25px;
+}
+
+.text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-font-family: "Baskerville Old Face";
+}
+
+.user-name {
+    -fx-font-size: 21;
+    -fx-font-family: 'Baskerville Old Face';
+    -fx-text-fill: white;
+}
+
+.online-text {
+    -fx-font-size: 15;
+    -fx-font-family: 'Baskerville Old Face';
+    -fx-text-fill: white;
+}
+
+
+.g-list-view {
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+    -fx-pref-height: 210px;
+    -fx-max-height: 210px;
+    -fx-min-height: 210px;
+    -fx-text-fill: white;
+    -fx-padding: 0 5px 0 5px;
+}
+
+.g-list-view .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color: transparent;
+    -fx-background-size: auto;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-pref-width: 15px;
+    -fx-pref-height: 15px;
+    -fx-background-image: url("/de/uniks/stp24/icons/scroller.png");
+}
+
+.g-list-view .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-border-width: 1;
+}
+
+.g-list-view .scroll-bar:vertical .increment-button .increment-arrow,
+.list-view .scroll-bar .decrement-button .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+}
+
+.g-list-view .list-cell:selected {
+    -fx-background-insets: 10px;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/lists/ownGame_listEntry.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-pref-height: 50px;
+    -fx-pref-width: 195px;
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+    -fx-padding: 0 0 6px 0;
+    -fx-border-color: transparent; /* Entfernt die Standard-Rahmenfarbe */
+}
+
+.g-list-view .list-cell {
+    -fx-background-insets: 10px;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/lists/gameListEntry.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-pref-height: 50px;
+    -fx-pref-width: 195px;
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+    -fx-padding: 0 0 6px 0;
+}
+
+.g-list-view .list-cell:empty {
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+}
+
+.browse-game-title {
+    -fx-font-family: "Blackadder ITC";
+    -fx-font-size: 30;
+}
+
+.load-game-button, .edit-game-button, .delete-game-button, .new-game-button {
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center;
+    -fx-pref-height: 80px;
+    -fx-pref-width: 90px;
+    -fx-font-size: 12;
+    -fx-font-family: Stencil;
+    -fx-text-fill: white;
+}
+
+.load-game-button {
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/loadGame_button.png");
+    -fx-padding: 5px 42px 0 0;
+}
+
+.edit-game-button {
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/editGame_button.png");
+    -fx-padding: 5px 0 0 42px;
+}
+
+.delete-game-button {
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/deleteGame_button.png");
+    -fx-padding: 5px 42px 0 0;
+}
+
+.new-game-button {
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/newGame_button.png");
+    -fx-padding: 5px 0 0 42px;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Text?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="85.0" prefWidth="240.0" styleClass="jobElementBackground" type="Pane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.jobs.JobElementComponent">
+   <ImageView fx:id="jobImage" fitHeight="61.0" fitWidth="57.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: white;">
+      <effect>
+         <DropShadow height="1.0" offsetX="3.0" offsetY="3.0" radius="0.0" spread="1.0" width="0.0">
+            <color>
+               <Color opacity="0.25" />
+            </color>
+         </DropShadow>
+      </effect>
+   </ImageView>
+   <Text fx:id="jobNameText" layoutX="83.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jobIslandNameText" text="\%upgrade.name" />
+   <Text fx:id="jobTypeText" layoutX="86.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jobTypeText" text="\%upgrade.type" />
+   <Button fx:id="jobCancelButton" layoutX="176.0" layoutY="52.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cancelJob" prefHeight="20.0" prefWidth="20.0" styleClass="deleteJobButton" />
+   <Button fx:id="inspectionButton" layoutX="203.0" layoutY="52.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#showJobOverview" prefHeight="20.0" prefWidth="20.0" styleClass="inspectJobButton" />
+   <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="82.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../../icons/stopwatch.png" />
+   </ImageView>
+   <Text fx:id="timerText" layoutX="109.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jobTimerText" text="99/99" />
+</fx:root>

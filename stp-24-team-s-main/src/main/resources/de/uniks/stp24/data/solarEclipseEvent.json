@@ -1,0 +1,49 @@
+{
+  "id": "solarEclipse",
+  "event_type": "misty",
+  "duration": 11,
+  "effects": [
+    {
+      "variable": "buildings.research_lab.production.research",
+      "base": 0,
+      "multiplier": 2,
+      "bonus": 0
+    },
+    {
+      "variable": "districts.research_site.production.research",
+      "base": 0,
+      "multiplier": 2,
+      "bonus": 0
+    },
+    {
+      "variable": "empire.market.fee",
+      "base": 0,
+      "multiplier": 1.4,
+      "bonus": 0
+    },
+    {
+      "variable": "buildings.farm.production.food",
+      "base": 0,
+      "multiplier": 0,
+      "bonus": 0
+    },
+    {
+      "variable": "districts.agriculture.production.food",
+      "base": 0,
+      "multiplier": 0,
+      "bonus": 0
+    },
+    {
+      "variable": "systems.upgraded.upkeep.fuel",
+      "base": 3,
+      "multiplier": 1,
+      "bonus": 0
+    },
+    {
+      "variable": "systems.developed.upkeep.fuel",
+      "base": 0,
+      "multiplier": 2,
+      "bonus": 0
+    }
+  ]
+}

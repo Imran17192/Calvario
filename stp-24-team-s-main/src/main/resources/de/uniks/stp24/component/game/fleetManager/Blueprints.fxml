@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<fx:root maxWidth="280.0" prefWidth="280.0" spacing="5.0" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.fleetManager.BlueprintsComponent">
+    <HBox>
+        <HBox spacing="5.0" HBox.hgrow="ALWAYS">
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+            <Label fx:id="blueprintTypeLabel" prefWidth="65.0" text="Type">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Label>
+            <ImageView fx:id="healthImage" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="healthLabel">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+            <ImageView fx:id="timeImage" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="timeLabel">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+            <ImageView fx:id="speedImage" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="speedLabel">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </HBox>
+    </HBox>
+    <HBox fx:id="blueprintHBox" alignment="CENTER_LEFT" spacing="6.0" VBox.vgrow="ALWAYS">
+        <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+            <ImageView fx:id="attackImage" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                <HBox.margin>
+                    <Insets right="2.0"/>
+                </HBox.margin>
+            </ImageView>
+            <Label fx:id="attackLabel" prefWidth="34.0">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </Label>
+            <ImageView fx:id="defenseImage" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                <HBox.margin>
+                    <Insets right="2.0"/>
+                </HBox.margin>
+            </ImageView>
+            <Label fx:id="defenseLabel" prefWidth="34.0" textAlignment="CENTER">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </Label>
+            <ImageView fx:id="resourceImage1" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                <HBox.margin>
+                    <Insets right="2.0"/>
+                </HBox.margin>
+            </ImageView>
+            <Label fx:id="resourceLabel1" prefWidth="34.0">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </Label>
+            <ImageView fx:id="resourceImage2" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                <HBox.margin>
+                    <Insets right="2.0"/>
+                </HBox.margin>
+            </ImageView>
+            <Label fx:id="resourceLabel2" prefWidth="34.0" textAlignment="CENTER">
+                <font>
+                    <Font size="15.0"/>
+                </font>
+            </Label>
+            <Button fx:id="infoButton" maxHeight="18.0" maxWidth="18.0" minHeight="18.0" minWidth="18.0"
+                    mnemonicParsing="false" prefHeight="18.0" prefWidth="18.0" styleClass="info-button"/>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" fillHeight="false" HBox.hgrow="NEVER">
+            <padding>
+                <Insets right="10.0" />
+            </padding>
+            <Button fx:id="addBlueprintButton" maxHeight="23.0" maxWidth="23.0" minHeight="23.0" minWidth="23.0" mnemonicParsing="false" onAction="#addBlueprint" prefHeight="23.0" prefWidth="23.0" styleClass="blueprint-sub-component-button" />
+        </HBox>
+        <padding>
+            <Insets left="10.0" />
+        </padding>
+    </HBox>
+    <padding>
+        <Insets bottom="18.0" left="10.0" top="14.0" />
+    </padding>
+    <stylesheets>
+        <URL value="@../../../style/ingameButtons.css" />
+        <URL value="@../../../style/fleetManager.css" />
+    </stylesheets>
+</fx:root>

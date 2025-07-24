@@ -1,0 +1,94 @@
+
+
+@font-face {
+    font-family: 'Blackadder ITC';
+    src: url("/de/uniks/stp24/fonts/Blackladder.ttf");
+}
+
+@font-face {
+    font-family: 'Tempus Sans ITC';
+    src: url("/de/uniks/stp24/fonts/TempusSans.ttf");
+}
+
+#eventName {
+    -fx-font-family: 'Blackadder ITC';
+    -fx-font-size: 35;
+    -fx-opacity: 1;
+}
+
+#eventDescription {
+    -fx-font-family: 'Tempus Sans ITC';
+    -fx-font-size: 15;
+    -fx-opacity: 1;
+}
+
+#eventVBox {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/randomEventsWindow.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-border-color: transparent;
+    -fx-opacity: 1;
+}
+
+#closeButton {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/closeWindowButton.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-border-color: transparent;
+    -fx-opacity: 1;
+}
+
+.eventDescription {
+    -fx-font-family: 'Tempus Sans ITC';
+    -fx-font-size: 15;
+    -fx-opacity: 1;
+}
+
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-opacity: 1;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+    -fx-opacity: 1;
+}
+
+.scroll-pane .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-opacity: 0;
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-opacity: 1;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-shape: "";
+    -fx-opacity: 1;
+
+}
+
+.scroll-pane .corner {
+    -fx-background-color: transparent;
+    -fx-opacity: 1;
+
+}

@@ -1,0 +1,10 @@
+
+@font-face {
+    font-family: 'Tempus Sans ITC';
+    src: url("/de/uniks/stp24/fonts/TempusSans.ttf");
+}
+
+Label {
+    -fx-font-family: 'Tempus Sans ITC';
+    -fx-text-fill: black;
+}

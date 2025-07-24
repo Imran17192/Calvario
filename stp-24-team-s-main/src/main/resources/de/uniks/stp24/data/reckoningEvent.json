@@ -1,0 +1,25 @@
+{
+  "id": "reckoning",
+  "event_type": "good",
+  "duration": 11,
+  "effects": [
+    {
+      "variable": "population",
+      "base": 0,
+      "multiplier": 1,
+      "bonus": 5,
+      "condType": "site",
+      "condID": "city",
+      "effected": "bonus"
+    },
+    {
+      "variable": "credits",
+      "base": 0,
+      "multiplier": 1,
+      "bonus": 1,
+      "condType": "resource",
+      "condID": "population",
+      "effected": "bonus"
+    }
+  ]
+}

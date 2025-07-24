@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<fx:root minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="250.0" stylesheets="@../../style/empireConfiguration.css" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.menu.GangComponent">
+   <Pane fx:id="pane" layoutX="12.0" layoutY="9.0" prefHeight="43.0" prefWidth="226.0" />
+   <Pane prefHeight="59.0" prefWidth="250.0" styleClass="empireFrame" />
+   <Pane layoutX="20.0" layoutY="12.0" style="-fx-background-color: transparent;" styleClass="captainBackground" stylesheets="@../../style/empireConfiguration.css">
+      <ImageView fx:id="portraitImage" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" style="-fx-border-color: BLACK; -fx-border-width: 10;" />
+   </Pane>
+   <Label fx:id="gangNameTextComponent" alignment="CENTER" layoutX="54.0" prefHeight="59.0" prefWidth="166.0" styleClass="listViewFont" wrapText="true">
+      <font>
+         <Font size="36.0" />
+      </font>
+   </Label>
+</fx:root>

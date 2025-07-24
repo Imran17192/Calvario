@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="184.0" prefWidth="374.0" type="AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.jobs.IslandOverviewJobsComponent">
+   <Text layoutX="151.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="headerTextBuildings" text="%overview.jobs" textAlignment="CENTER" wrappingWidth="81.404296875" />
+   <Text fx:id="noJobText" layoutX="85.0" layoutY="71.05078125" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" text="%jobs.island.noJob" textAlignment="CENTER" wrappingWidth="205.0" />
+   <ListView fx:id="jobProgressListView" layoutX="86.0" layoutY="33.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="80.0" prefWidth="225.0" styleClass="jobProgressListView" />
+</fx:root>

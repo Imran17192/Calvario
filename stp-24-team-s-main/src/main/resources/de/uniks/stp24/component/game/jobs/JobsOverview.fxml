@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ToggleButtonGroup?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" styleClass="jobsOverviewBackground" stylesheets="@../../../style/jobsOverview.css" type="AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.jobs.JobsOverviewComponent">
+   <HBox alignment="CENTER" layoutX="65.0" layoutY="60.0" prefHeight="50.0" prefWidth="270.0" spacing="5.0">
+       <ToggleButtonGroup maxHeight="30.0" prefHeight="30.0" selectionType="SINGLE">
+           <ToggleButton fx:id="islandJobsButton" onAction="#showIslandJobs" styleClass="jobsOverviewButton"
+                         text="%ISLANDS" selected="true">
+               <HBox.margin>
+                   <Insets right="5.0"/>
+               </HBox.margin>
+           </ToggleButton>
+           <ToggleButton fx:id="technologyJobsButton" onAction="#showTechnologyJobs" styleClass="jobsOverviewButton"
+                         text="%RESEARCH"/>
+           <ToggleButton fx:id="travelJobsButton" onAction="#showTravelJobs" styleClass="jobsOverviewButton"
+                         text="%TRAVEL">
+               <HBox.margin>
+                   <Insets right="5.0"/>
+               </HBox.margin>
+           </ToggleButton>
+           <ToggleButton fx:id="shipJobsButton" onAction="#showShipJobs" styleClass="jobsOverviewButton" text="%SHIPS">
+               <HBox.margin>
+                   <Insets right="5.0"/>
+               </HBox.margin>
+           </ToggleButton>
+       </ToggleButtonGroup>
+   </HBox>
+   <ListView fx:id="jobsListView" layoutX="74.0" layoutY="109.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="269.0" styleClass="jobsOverviewList" />
+   <Button fx:id="closeButton" layoutX="332.0" layoutY="27.0" mnemonicParsing="false" onAction="#closeOverview" prefHeight="50.0" prefWidth="50.0" styleClass="closeButton" />
+   <Text layoutX="188.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="jobsHeaderText" text="Jobs" />
+</fx:root>

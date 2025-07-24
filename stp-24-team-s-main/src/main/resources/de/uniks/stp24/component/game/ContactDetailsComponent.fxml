@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" styleClass="contactDetailsBackground" stylesheets="@../../style/contactsAndWar.css" type="StackPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.ContactDetailsComponent">
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;">
+        <ImageView fx:id="empireImageView" fitHeight="78.0" fitWidth="106.0" layoutX="52.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+        <Text fx:id="empireNameText" layoutX="80.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="contactsDetailsTitle" wrappingWidth="256.80340576171875" />
+       <VBox layoutX="36.0" layoutY="64.0" prefHeight="415.0" prefWidth="301.0" spacing="10.0">
+          <padding>
+             <Insets left="50.0" top="35.0" />
+          </padding>
+          <Text fx:id="intelText" text="Intel:">
+            <VBox.margin>
+               <Insets left="90.0" />
+            </VBox.margin></Text>
+          <HBox prefHeight="70.0" prefWidth="275.0">
+             <VBox prefHeight="80.0" prefWidth="176.0" spacing="10.0">
+                <padding>
+                   <Insets top="10.0" />
+                </padding>
+                <Text fx:id="popText" strokeType="OUTSIDE" strokeWidth="0.0" text="Population: " />
+                <Text fx:id="homeText" strokeType="OUTSIDE" strokeWidth="0.0" text="Homeworld:" />
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+             </VBox>
+             <ImageView fx:id="populationIcon" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="popIcon" HBox.hgrow="NEVER">
+                <HBox.margin>
+                   <Insets top="20.0" />
+                </HBox.margin>
+             </ImageView>
+            <padding>
+               <Insets top="5.0" />
+            </padding>
+          </HBox>
+          <HBox prefHeight="70.0" prefWidth="275.0">
+             <VBox prefHeight="100.0" prefWidth="176.0" spacing="5.0">
+                <padding>
+                   <Insets top="10.0" />
+                </padding>
+                <Text fx:id="siteText" strokeType="OUTSIDE" strokeWidth="0.0" text="Sites:" />
+                <Text fx:id="buildingsText" strokeType="OUTSIDE" strokeWidth="0.0" text="Buildings:" />
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+             </VBox>
+             <ImageView fx:id="homeIcon" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
+                <HBox.margin>
+                   <Insets top="15.0" />
+                </HBox.margin>
+             </ImageView>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            <padding>
+               <Insets top="5.0" />
+            </padding>
+          </HBox>
+          <HBox prefHeight="100.0" prefWidth="200.0">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                   <VBox prefHeight="100.0" prefWidth="211.0" spacing="30.0">
+                      <padding>
+                         <Insets top="10.0" />
+                      </padding>
+                      <Text fx:id="strengText" strokeType="OUTSIDE" strokeWidth="0.0" text="Strength:">
+                        <VBox.margin>
+                           <Insets top="5.0" />
+                        </VBox.margin>
+                     </Text>
+                   </VBox>
+                   <ImageView fx:id="strengthIcon" fitHeight="30.0" fitWidth="30.0" layoutX="174.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <VBox.margin>
+               <Insets top="10.0" />
+            </VBox.margin>
+          </HBox>
+       </VBox>
+        <Button fx:id="closeContactDetailComponentButton" layoutX="324.0" layoutY="8.0" mnemonicParsing="false" onAction="#closeContactDetailsComponent" prefHeight="50.0" prefWidth="50.0" styleClass="closeWindowButton" />
+        <Button layoutX="146.0" layoutY="442.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="94.0" styleClass="warButtonDesign" textFill="WHITE">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Button>
+        <ToggleButton fx:id="warButton" layoutX="146.0" layoutY="442.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="94.0" styleClass="warButtonDesign">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </ToggleButton>
+        <Text fx:id="warStateText" layoutX="122.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="141.33331298828125">
+        <font>
+            <Font size="9.0" />
+        </font>
+        </Text>
+    </AnchorPane>
+</fx:root>

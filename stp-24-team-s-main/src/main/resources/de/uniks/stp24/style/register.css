@@ -1,0 +1,163 @@
+.registerBackground {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/register_background.png");
+    -fx-background-size: 100% 100%;
+}
+
+.loginBackground {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/login_background.png");
+    -fx-background-size: 100% 100%;
+}
+
+.languageButton_en {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/en_button.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-pref-width: 25px;
+    -fx-pref-height: 25px;
+}
+
+.languageButton_de {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/de_button.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-pref-width: 25px;
+    -fx-pref-height: 25px;
+}
+
+.goBackButton{
+    -fx-font-size: 15;
+    -fx-font-family: "Baskerville";
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/button_red.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 45px;
+}
+
+.confirmButton{
+    -fx-font-size: 15;
+    -fx-font-family: "Baskerville";
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/button_green.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 45px;
+}
+
+.signupButton{
+    -fx-font-size: 15;
+    -fx-font-family: "Baskerville";
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/blue_button_element.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 45px;
+}
+
+.licensesButton{
+    -fx-font-size: 10;
+    -fx-font-family: "Baskerville";
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/lightBlue_button_element.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-pref-width: 70px;
+    -fx-pref-height: 30px;
+}
+
+.textField{
+    -fx-font-family: "Javanese Text";
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/avatar/redesign/textField_editAccount.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.rememberMe {
+    -fx-font-family: "Javanese Text";
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/avatar/redesign/textField_editAccount.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 50px;
+}
+
+.rememberMe .box {
+    -fx-background-color: #D3D3D3;
+    -fx-border-color: #000000;
+    -fx-border-radius: 0;
+}
+
+.rememberMe:selected .mark {
+    -fx-background-color: #D3D3D3;
+    -fx-border-color: #5d5454;
+}
+
+.eyeButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/showPassword.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-pref-width: 25px;
+    -fx-pref-height: 25px;
+}
+
+.eyeButton:selected {
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/unshowPassword.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+}
+
+.screenName {
+    -fx-font-family: "Javanese Text";
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}

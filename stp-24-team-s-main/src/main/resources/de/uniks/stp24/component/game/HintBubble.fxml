@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<fx:root prefHeight="118.0" prefWidth="308.0" type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.CoolerBubbleComponent">
+   <stylesheets>
+      <URL value="@../../style/styles.css" />
+      <URL value="@../../style/ingameButtons.css" />
+   </stylesheets>
+   <ImageView fx:id="captainLogo" fitHeight="100.0" fitWidth="100.0" layoutX="1.0" layoutY="8.0" onMouseClicked="#silence" onMouseEntered="#scaleUp" onMouseExited="#scaleDown" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../assets/logos/captainWebjaw.png" />
+   </ImageView>
+   <Group layoutX="81.0" layoutY="3.0">
+      <VBox fx:id="backgroundBubble" alignment="TOP_RIGHT" layoutX="-10.0" prefHeight="110.0" prefWidth="270.0" styleClass="hintCaptainPane">
+         <Button fx:id="nextButton" mnemonicParsing="false" onAction="#decideWhatToSay" prefHeight="12.0" prefWidth="28.0" styleClass="closeButtonHint" />
+         <Button fx:id="forwardButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#forward" prefHeight="25.0" prefWidth="25.0" styleClass="forwardButton">
+            <VBox.margin>
+               <Insets right="10.0" top="20.0" />
+            </VBox.margin>
+         </Button>
+      </VBox>
+      <TextArea fx:id="captainText" disable="true" editable="false" layoutX="19.0" layoutY="4.0" prefHeight="100.0" prefWidth="200.0" styleClass="hintText" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+   </Group>
+</fx:root>

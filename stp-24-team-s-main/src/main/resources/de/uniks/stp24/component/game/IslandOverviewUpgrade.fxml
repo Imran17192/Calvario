@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="islandUpgradeBackground" stylesheets="@../../style/islandOverview.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.OverviewUpgradeComponent">
+   <VBox layoutX="21.0" layoutY="44.0" prefHeight="556.0" prefWidth="362.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="16.0">
+      <VBox prefHeight="8.0" prefWidth="400.0" />
+      <HBox alignment="CENTER_LEFT" prefHeight="67.0" prefWidth="400.0">
+         <VBox prefHeight="77.0" prefWidth="34.0" />
+         <VBox alignment="CENTER" prefHeight="58.0" prefWidth="314.0">
+            <Text fx:id="levelOne" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="headerTextUpgrade" text="%update.explored" />
+            <VBox prefHeight="7.0" prefWidth="358.0" />
+         </VBox>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="22.0" prefWidth="400.0">
+         <VBox prefHeight="77.0" prefWidth="16.0" />
+         <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="357.0">
+            <Text fx:id="levelTwo" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="headerTextUpgrade" text="\%placeholder" textAlignment="CENTER" wrappingWidth="122.3291015625" />
+            <VBox prefHeight="2.0" prefWidth="358.0" />
+            <Label fx:id="levelTwoText" styleClass="tableHeadingText" text="\%placeholder" />
+         </VBox>
+      </HBox>
+      <VBox prefHeight="30.0" prefWidth="400.0" />
+      <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="400.0">
+         <VBox prefHeight="77.0" prefWidth="16.0" />
+         <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="357.0">
+            <Text fx:id="levelThree" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="headerTextUpgrade" text="\%placeholder" textAlignment="CENTER" wrappingWidth="122.3291015625" />
+            <VBox prefHeight="2.0" prefWidth="358.0" />
+            <Label fx:id="levelThreeText" styleClass="tableHeadingText" text="\%placeholder" />
+         </VBox>
+      </HBox>
+      <VBox prefHeight="18.0" prefWidth="400.0" />
+      <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="400.0">
+         <VBox prefHeight="77.0" prefWidth="16.0" />
+         <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="357.0">
+            <Text fx:id="levelFour" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="headerTextUpgrade" text="\%placeholder" textAlignment="CENTER" wrappingWidth="101.94091796875" />
+            <VBox prefHeight="2.0" prefWidth="358.0" />
+            <Label fx:id="levelFourText" styleClass="tableHeadingText" text="\%placeholder" />
+         </VBox>
+      </HBox>
+      <VBox prefHeight="65.0" prefWidth="400.0" />
+      <HBox fx:id="upgrade_box" prefHeight="138.0" prefWidth="400.0">
+         <VBox prefHeight="92.0" prefWidth="34.0" />
+         <VBox prefHeight="118.0" prefWidth="206.0">
+            <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="206.0">
+               <VBox prefHeight="16.0" prefWidth="38.0" />
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" text="Consumes" />
+               <VBox prefHeight="16.0" prefWidth="30.0" />
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" text="Costs" />
+            </HBox>
+            <VBox prefHeight="20.0" prefWidth="206.0" />
+            <HBox prefHeight="128.0" prefWidth="206.0">
+               <VBox prefHeight="115.0" prefWidth="34.0" />
+               <ListView fx:id="upgradeUpkeepList" prefHeight="122.0" prefWidth="50.0" style="-fx-background-color: transparent;" styleClass="resourceList" />
+               <VBox prefHeight="76.0" prefWidth="32.0" />
+               <ListView fx:id="upgradeCostList" prefHeight="76.0" prefWidth="79.0" style="-fx-background-color: transparent;" styleClass="resourceList" />
+            </HBox>
+            <Pane fx:id="jobsContainer" prefHeight="57.0" prefWidth="206.0" visible="false">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Pane>
+         </VBox>
+         <VBox prefHeight="138.0" prefWidth="27.0" />
+         <VBox prefHeight="92.0" prefWidth="66.0">
+            <VBox prefHeight="36.0" prefWidth="66.0" />
+            <Pane prefHeight="62.0" prefWidth="66.0">
+               <Button fx:id="confirmUpgrade" layoutY="1.0" mnemonicParsing="false" onAction="#buyUpgrade" prefHeight="62.0" prefWidth="66.0" style="-fx-background-color: transparent;" />
+            </Pane>
+         </VBox>
+      </HBox>
+      <VBox prefHeight="34.0" prefWidth="30.0" />
+   </VBox>
+   <Pane layoutX="372.0" layoutY="16.0" onMouseClicked="#closeOverview" prefHeight="40.0" prefWidth="40.0" styleClass="islandOverviewCloseButton" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="0.0">
+      <Button fx:id="close" mnemonicParsing="false" onMouseClicked="#closeOverview" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;" styleClass="islandOverviewCloseButton" />
+   </Pane>
+   <Pane layoutX="6.0" layoutY="16.0" onMouseClicked="#goBack" prefHeight="40.0" prefWidth="40.0" styleClass="goBackUpgrade" AnchorPane.leftAnchor="-5.0" AnchorPane.topAnchor="0.0">
+      <Button fx:id="backButton" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;" styleClass="goBackUpgrade" />
+   </Pane>
+   <Pane fx:id="checkColonized" prefHeight="30.0" prefWidth="30.0" styleClass="checkUpgrade" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="100.0" />
+   <Pane fx:id="checkUpgraded" prefHeight="30.0" prefWidth="30.0" styleClass="checkUpgrade" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="180.0" />
+   <Pane fx:id="checkDeveloped" prefHeight="30.0" prefWidth="30.0" styleClass="checkUpgrade" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="280.0" />
+   <Pane fx:id="checkExplored" prefHeight="30.0" prefWidth="30.0" styleClass="checkUpgrade" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="38.0" />
+</fx:root>

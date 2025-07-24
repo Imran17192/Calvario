@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<fx:root fx:id="effectVBox" spacing="5.0" type="VBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.technology.TechnologyEffectDetailsComponent">
+    <VBox fx:id="effectTitleVBox" alignment="TOP_CENTER" VBox.vgrow="ALWAYS">
+        <Label styleClass="effect-details-title" text="%effects">
+            <font>
+                <Font size="20.0" />
+            </font></Label>
+    </VBox>
+    <padding>
+        <Insets bottom="40.0" left="20.0" right="20.0" top="5.0" />
+    </padding>
+</fx:root>

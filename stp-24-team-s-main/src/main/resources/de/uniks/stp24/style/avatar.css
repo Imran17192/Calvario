@@ -1,0 +1,208 @@
+
+.editAccountBackground{
+    -fx-background-image: url("/de/uniks/stp24/assets/avatar/redesign/editAccount_background.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.returnButton{
+    -fx-font-family: "PT Serif";
+    -fx-font-size: 22;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/backButton.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 75px;
+}
+
+.deleteButton{
+    -fx-font-family: "PT Serif";
+    -fx-font-size: 22;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/avatar/redesign/delete_account_button.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.editButton{
+    -fx-font-family: "PT Serif";
+    -fx-font-size: 22;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/avatar/redesign/edit_profile_button.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-max-width: 45px;
+    -fx-max-height: 45px;
+}
+
+.editButtonAvatar{
+    -fx-font-family: "PT Serif";
+    -fx-font-size: 22;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/avatar/redesign/edit_profile_button.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-max-width: 25px;
+    -fx-max-height: 25px;
+}
+
+
+.returnButton{
+    -fx-font-family: "PT Serif";
+    -fx-font-size: 22;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/avatar/redesign/return_button.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-max-width: 50px;
+    -fx-max-height: 50px;
+}
+
+.textFieldStyle{
+    -fx-font-family: "PT Serif";
+    -fx-font-size: 22;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/avatar/redesign/textField_editAccount.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.randomButton{
+    -fx-font-family: "PT Serif";
+    -fx-font-size: 22;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/avatar/redesign/random_button.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-max-width: 50px;
+    -fx-max-height: 50px;
+}
+
+.rightArrow {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/avatar/redesign/switch_avatar_button.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-pref-width: 50px;
+    -fx-pref-height: 50px;
+}
+
+.leftArrow {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/avatar/redesign/switch_avatar_button.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-pref-width: 50px;
+    -fx-pref-height: 50px;
+    -fx-rotate: 180;
+}
+
+.redButton{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/avatar/redesign/button_red.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.greenButton{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/avatar/redesign/button_greens.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+
+.baskervilleOldFaceWhite {
+    -fx-font-family: "Baskerville Old Face";
+    -fx-font-size: 11px;
+    -fx-font-weight: normal;
+    -fx-fill: white;
+}
+
+
+.tempusSansITCWhite {
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 16px;
+    -fx-font-weight: normal;
+    -fx-fill: white;
+}
+
+.javaneseTextWhite {
+    -fx-font-family: "Javanese Text";
+    -fx-font-size: 26px;
+    -fx-font-weight: normal;
+    -fx-fill: white;
+}
+
+
+.newLock {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/avatar/redesign/unlock_icon.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-pref-width: 25px;
+    -fx-pref-height: 35px;
+}
+
+.newLock:selected {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/avatar/redesign/lock_icon.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-pref-width: 25px;
+    -fx-pref-height: 35px;
+}
+
+.editAccTitle{
+    -fx-font-family: "Baskerville Old Face";
+    -fx-fill: white;
+    -fx-font-size: 30;
+}

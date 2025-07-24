@@ -1,0 +1,333 @@
+@font-face {
+    font-family: 'Blackadder ITC';
+    src: url("/de/uniks/stp24/fonts/Blackladder.ttf");
+}
+
+@font-face {
+    font-family: 'Tempus Sans ITC';
+    src: url("/de/uniks/stp24/fonts/TempusSans.ttf");
+}
+
+@font-face {
+    font-family: 'Stencil';
+    src: url("/de/uniks/stp24/assets/fonts/Stencil.ttf");
+}
+
+@font-face {
+    font-family: 'Baskerville Old Face';
+    src: url("/de/uniks/stp24/fonts/Baskerville.ttf");
+}
+
+.technologieText {
+    -fx-font-family: 'Baskerville Old Face';
+    -fx-font-size: 48;
+    -fx-opacity: 1;
+}
+
+.mainButtons {
+    -fx-font-family: Stencil;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/blue_button_element.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.technologiesBackground {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/technologies_selectCategory_background.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.technologiesCategoryBackground {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/technologies_chooseResearch_background.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.technologyCategoriesLabel {
+    -fx-font-family: "Tempus Sans ITC";
+}
+
+.technologyCategoryTitle {
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+
+.currentResearchLabel {
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-weight: bold;
+}
+
+.technologies-list-view .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color: transparent;
+    -fx-background-size: auto;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-pref-width: 15px;
+    -fx-pref-height: 15px;
+    -fx-background-image: url("/de/uniks/stp24/icons/scroller.png");
+}
+
+.technologies-list-view .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-border-width: 1;
+}
+
+.technologies-list-view .scroll-bar:vertical .increment-button .increment-arrow,
+.list-view .scroll-bar .decrement-button .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+}
+
+.list-view:focused {
+
+}
+
+.technologies-list-view {
+    -fx-background-color: transparent;
+}
+
+.technologies-list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/red_frame.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+/* Stil für die innere ListView */
+.description-list-view {
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 14;
+}
+
+.description-list-view .list-cell {
+    -fx-pref-height: 45px;
+    -fx-alignment: TOP_LEFT;
+}
+
+.description-list-view .list-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-image: none;
+}
+
+.description-list-view .viewport {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.technologies-list-view .list-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-image: none;
+}
+
+.description-list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+}
+
+.description-list-view .scroll-bar:horizontal .thumb {
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+}
+
+.description-list-view .scroll-bar:horizontal .increment-button,
+.description-list-view .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+}
+
+.description-list-view .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+}
+
+.description-list-view .corner {
+    -fx-background-color: transparent;
+    -fx-opacity: 1;
+ }
+
+.description-list-view .viewport {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.research-tooltip {
+    -fx-opacity: 1;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/details_background.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.research-cost-title {
+    -fx-font-family: "Blackadder ITC";
+    -fx-font-size: 25;
+}
+
+.research-cost-details {
+    -fx-font-size: 16;
+}
+
+.technologiesActualResearchBackground {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/technologies_actualResearch_background.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.researchHeadLine {
+    -fx-font-family: "Blackadder ITC";
+    -fx-background-color: transparent;
+    -fx-font-weight: none;
+    -fx-font-size: 30;
+}
+
+.technologyName {
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-background-color: transparent;
+    -fx-font-weight: none;
+    -fx-font-size: 22;
+}
+
+.description-tooltip {
+    -fx-opacity: 1;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/technology_effects_background.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.technology-description-label {
+}
+
+.effect-details-tooltip {
+    -fx-opacity: 1;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/technology_effects_background.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.effect-details-title {
+    -fx-font-family: "Blackadder ITC";
+    -fx-font-size: 25;
+}
+
+.effect-details-elements {
+    -fx-font-family: "Blackadder ITC";
+    -fx-font-size: 18;
+}
+
+#backButton {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/arrow_left.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.job-research-description-list-view {
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 14;
+    -fx-pref-height: 65px
+}
+
+.job-research-description-list-view .list-cell {
+    -fx-padding: 2px;
+}
+
+.job-research-description-list-view .list-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-image: none;
+}
+
+.job-research-description-list-view .viewport {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.job-research-description-list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+}
+
+/* Stile für die spezifische Scrollbar der ListView mit Klasse 'job-research-description-list-view' */
+.job-research-description-list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: black; /* Farbe der Scroll-Leiste */
+    -fx-background-insets: 0;
+    -fx-background-radius: 2px;
+    -fx-pref-width: 2px;
+    -fx-max-width: 2px
+}
+
+.job-research-description-list-view .scroll-bar:vertical .track {
+    -fx-background-color: transparent; /* Hintergrund der Spur transparent machen */
+}
+
+.job-research-description-list-view .scroll-bar:horizontal .thumb {
+    -fx-background-color: transparent;
+}
+
+.job-research-description-list-view .scroll-bar:vertical,
+.job-research-description-list-view .scroll-bar:horizontal {
+    -fx-pref-width: 2px; /* Breite der vertikalen Scroll-Leiste */
+    -fx-pref-height: 2px; /* Höhe der horizontalen Scroll-Leiste */
+    -fx-background-color: transparent; /* Hintergrund der Scroll-Leiste transparent machen */
+}
+
+.job-research-description-list-view .scroll-bar .increment-button,
+.job-research-description-list-view .scroll-bar .decrement-button,
+.job-research-description-list-view .scroll-bar .increment-arrow,
+.job-research-description-list-view .scroll-bar .decrement-arrow {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-shape: "";
+}
+
+.job-research-description-list-view .scroll-bar .increment-arrow,
+.job-research-description-list-view .scroll-bar .decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.job-research-description-list-view .corner {
+    -fx-background-color: transparent;
+    -fx-opacity: 1;
+}
+
+.job-research-description-list-view .viewport {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}

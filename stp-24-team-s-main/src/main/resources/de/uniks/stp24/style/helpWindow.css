@@ -1,0 +1,114 @@
+.helpText{
+    -fx-font-family: "Javanese Text";
+    -fx-font-size: 20;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+
+.storageText{
+    -fx-font-family: "Blackadder ITC";
+    -fx-font-size: 30;
+}
+
+.helpWindowBackground{
+    -fx-background-image: url("/de/uniks/stp24/assets/backgrounds/help_menu_background.png");
+    -fx-background-size: 100% 100%;
+}
+
+.technologyList .list-cell {
+    -fx-background-color: transparent;
+    -fx-cell-size: 5;
+}
+
+.explanation .list-cell {
+    -fx-font-size: 12;
+    -fx-scrollbar-background: derive(-fx-control-inner-background, -20%);
+    -fx-scrollbar: -fx-base;
+}
+
+.explanationText{
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-background-color: "TRANSPARENT";
+    -fx-font-weight: none;
+    -fx-font-size: 12;
+}
+
+.technologyList .scroll-bar:vertical{
+    -fx-background-color: transparent;
+    -fx-border-width: 1;
+}
+
+.technologyList .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+    -fx-background-size: auto;
+    -fx-background-repeat: no-repeat;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/scroller.png");
+}
+
+.technologyList .scroll-bar:vertical .increment-button .increment-arrow, .listBrowseGame .scroll-bar .decrement-button .decrement-arrow,
+.backgroundTextArea .scroll-bar:vertical .increment-button .increment-arrow .backgroundTextArea .decrement-button .decrement-arrow,
+.text-area .scroll-bar:vertical .increment-button .increment-arrow .backgroundTextArea .decrement-button .decrement-arrow
+{
+    -fx-background-color: transparent;
+    -fx-background-image: none;
+}
+
+.technologyText{
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-background-color: transparent;
+    -fx-font-weight: none;
+    -fx-text-fill: black;
+    -fx-font-size: 12;
+}
+
+.tableHeadingText{
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-background-color: "TRANSPARENT";
+    -fx-font-weight: none;
+    -fx-font-size: 16;
+}
+
+.text-area {
+    -fx-background-color: transparent;
+    -fx-font-family: "Tempus Sans ITC";
+        -fx-font-size: 12;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .content {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-bar:vertical .increment-button,
+.text-area .scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-bar:vertical .increment-button .increment-arrow,
+.text-area .scroll-bar:vertical .decrement-button .decrement-arrow {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-bar:vertical .thumb {
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+

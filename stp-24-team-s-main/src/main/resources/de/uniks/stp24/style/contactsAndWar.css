@@ -1,0 +1,206 @@
+/*Wars*/
+.warPopUpBackGround {
+    -fx-background-image: url("/de/uniks/stp24/assets/empireConfiguration/traits_details_background.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.defaultButton {
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/button_element.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 16px;
+    -fx-font-weight: normal;
+    -fx-fill: white;
+
+}
+
+.warTitle {
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-fill: red;
+    -fx-font-size: 40;
+}
+
+/*TextStyles*/
+.baskervilleOldFace {
+    -fx-font-family: "Baskerville Old Face";
+    -fx-font-size: 16px;
+    -fx-font-weight: normal;
+    -fx-fill: black;
+}
+
+
+.tempusSansITCWarText {
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 16px;
+    -fx-font-weight: normal;
+    -fx-fill: black;
+}
+
+.tempusSansITC {
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 23px;
+    -fx-font-weight: normal;
+    -fx-fill: black;
+}
+
+.tempusSansITCRed {
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 23px;
+    -fx-font-weight: normal;
+    -fx-fill: red;
+}
+
+.javaneseText {
+    -fx-font-family: "Javanese Text";
+    -fx-font-size: 16px;
+    -fx-font-weight: normal;
+    -fx-fill: black;
+}
+
+/*Contacts*/
+.contactsBackground {
+    -fx-background-image: url("/de/uniks/stp24/assets/contactsAndWars/Contacts_Frame.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.contactsTitle {
+    -fx-font-family: "Baskerville Old Face";
+    -fx-fill: white;
+    -fx-font-size: 58;
+}
+
+
+
+.closeWindowButton {
+    -fx-background-image: url("/de/uniks/stp24/assets/empireOverview/close_window_button.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.contactListViewStyle {
+    -fx-background-color: transparent;
+}
+
+.contactListViewStyle .list-cell {
+    -fx-background-color: transparent;
+}
+
+.contactListViewStyle .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+}
+
+.contactListViewStyle .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-padding: 5;
+}
+
+.contactListViewStyle .scroll-bar .thumb {
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/scroller.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 90% 30%;
+    -fx-background-repeat: no-repeat;
+    -fx-cursor: hand;
+}
+
+.contactListViewStyle .scroll-bar .track {
+    -fx-background-color: black;
+    -fx-background-radius: 5;
+}
+
+.contactListViewStyle .corner {
+    -fx-background-color: transparent; /* Versteckt das weiße Quadrat unten rechts */
+}
+
+.cellBackground{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/jobsOverview/red_frame.png");
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+/*ContactDetails*/
+
+.contactsDetailsTitle {
+    -fx-font-family: "Baskerville Old Face";
+    -fx-fill: white;
+    -fx-font-size: 25;
+}
+
+.contactDetailsBackground {
+    -fx-background-image: url("/de/uniks/stp24/assets/contactsAndWars/Contact_Details_Frame.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.warButtonDesign {
+    -fx-background-image: url("/de/uniks/stp24/assets/contactsAndWars/red_button_element.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-text-fill: white;
+    -fx-border-width: 0;
+    -fx-font-size: 12;
+}
+
+.warButtonDesign:selected {
+    -fx-background-image: url("/de/uniks/stp24/assets/contactsAndWars/green_button_element.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-text-fill: white;
+    -fx-border-width: 0;
+}
+
+.popIcon {
+    -fx-background-image: url("/de/uniks/stp24/icons/resources/population.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-fit-to-height: 30;
+}
+
+.tempusSansITCGameResult {
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 26px;
+    -fx-font-weight: normal;
+    -fx-fill: black;
+}
+
+.tempusSansITCGameResultGreen {
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 26px;
+    -fx-font-weight: normal;
+    -fx-fill: green;
+}
+
+.tempusSansITCGameResultRed{
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 26px;
+    -fx-font-weight: normal;
+    -fx-fill: red;
+}
+
+.tempusSansITCGameResultSpectate{
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 15px;
+    -fx-font-weight: normal;
+    -fx-fill: black;
+}
+
+
+
+/*Endings*/

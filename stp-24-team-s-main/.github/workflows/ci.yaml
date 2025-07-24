@@ -1,0 +1,42 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+jobs:
+  build:
+    name: CI
+    runs-on: [arc-runner-set]
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: adopt
+          java-version: 21
+          java-package: jdk
+      - name: Set up fontconfig
+        run: sudo apt-get -y update && sudo apt-get -y install fontconfig libpangoft2-1.0-0
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          arguments: build test jacocoTestReport
+      - name: Add coverage to PR
+        if: github.event_name == 'pull_request'
+        uses: madrapps/jacoco-report@v1.3
+        with:
+          title: Code Coverage
+          paths: build/reports/jacoco/test/jacocoTestReport.xml
+          token: ${{ secrets.GITHUB_TOKEN }}
+          min-coverage-overall: ${{ secrets.STP_MIN_COVERAGE }}
+
+      - name : Pics of cute dogs  
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: .github/workflows/CI/cutedogs

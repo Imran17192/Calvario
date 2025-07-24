@@ -1,0 +1,94 @@
+.lobbyList{
+    -fx-background-color: transparent;
+}
+
+.lobbyList .list-cell {
+    -fx-background-color: transparent;
+}
+
+.lobbyListCellMember {
+    -fx-background-color: transparent;
+    -fx-background-image: url('/de/uniks/stp24/assets/backgrounds/member_background.png');
+    -fx-background-repeat: no-repeat no-repeat;
+    -fx-background-size: 100% 100%;
+}
+
+.lobbyListCellHost {
+    -fx-background-color: transparent;
+    -fx-background-image: url('/de/uniks/stp24/assets/backgrounds/host_background.png');
+    -fx-background-repeat: no-repeat no-repeat;
+    -fx-background-size: 100% 100%;
+}
+
+.lobbyList .scroll-bar:vertical {
+    -fx-background-image: url("/de/uniks/stp24/assets/other/black_square.png");
+    -fx-background-position: center;
+    -fx-background-repeat: repeat-y;
+    -fx-background-color: transparent;
+    -fx-background-size: 50% 100%;
+
+    -fx-pref-height: 15;
+    -fx-max-height: 15;
+    -fx-min-height: 15;
+}
+
+.lobbyList .scroll-bar:horizontal {
+    -fx-scale-x: 0;
+    -fx-scale-y: 0;
+    -fx-background-color: transparent;
+}
+
+.lobbyList .scroll-bar:vertical .thumb {
+    -fx-padding: 15;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-size: auto;
+    -fx-background-image: url("/de/uniks/stp24/assets/other/scroller.png");
+}
+
+.lobbyList .scroll-bar:vertical .track {
+    -fx-padding: 0 0 0 -15;
+}
+
+.lobbyList .scroll-bar:vertical .increment-button,
+.lobbyList .scroll-bar:vertical .decrement-button,
+.lobbyList .scroll-bar:horizontal .increment-button,
+.lobbyList .scroll-bar:horizontal .decrement-button{
+    -fx-scale-x: 0;
+    -fx-scale-y: 0;
+    -fx-background-color: transparent;
+}
+
+.lobbyList .scroll-bar:vertical .increment-button .increment-arrow,
+.lobbyList .scroll-bar:vertical .decrement-button .decrement-arrow,
+.lobbyList .scroll-bar:horizontal .increment-button .increment-arrow,
+.lobbyList .scroll-bar:horizontal .decrement-button .decrement-arrow{
+    -fx-scale-x: 0;
+    -fx-scale-y: 0;
+    -fx-background-color: transparent;
+}
+
+
+.lobbyElementText {
+    -fx-font-family: "Javanese Text";
+    -fx-font-size: 18;
+    -fx-fill: white;
+}
+
+.lobbyPasswordField {
+    -fx-background-color: transparent;
+    -fx-background-image: url('/de/uniks/stp24/assets/backgrounds/password_input_background.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: bottom;
+    -fx-font-family: "Javanese Text";
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: white;
+    -fx-font-size: 22;
+    -fx-background-size: 100% 80%;
+}
+
+.readyText {
+    -fx-font-family: "Javanese Text";
+    -fx-font-size: 18;
+}

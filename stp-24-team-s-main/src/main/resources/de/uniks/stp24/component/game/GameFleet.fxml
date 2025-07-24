@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#select" prefHeight="60.0" prefWidth="60.0" type="Pane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.GameFleetController">
+   <Circle fx:id="collisionCircle" fill="#ff000040" layoutX="30.0" layoutY="30.0" radius="20.0" stroke="#ffffff80" strokeType="INSIDE" visible="false" />
+   <ImageView fx:id="fleetImage" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+   <Circle fx:id="empireCircle" fill="#ffffff00" layoutX="30.0" layoutY="30.0" radius="35.0" stroke="RED" strokeDashOffset="10.0" strokeLineCap="ROUND" strokeWidth="3.0" />
+
+   <Text fx:id="healthText" layoutX="5.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+   <ImageView fx:id="healthIcon" fitHeight="30.0" fitWidth="30.0" layoutX="-30.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+<!--   <Label fx:id="nameLabel" layoutX="5.0" layoutY="95.0" />-->
+
+   <Text fx:id="fleetNameText" layoutX="-30.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="120.0" />
+
+</fx:root>

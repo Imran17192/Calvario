@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<fx:root prefHeight="127.0" prefWidth="291.0" styleClass="explanationBackground" stylesheets="@../../style/islandOverview.css" type="VBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <VBox prefHeight="18.0" prefWidth="291.0" />
+   <HBox alignment="CENTER_LEFT" prefHeight="15.0" prefWidth="183.0" stylesheets="@../../style/islandOverview.css">
+      <VBox prefHeight="22.0" prefWidth="40.0" />
+      <ImageView fx:id="resImage" fitHeight="22.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="title" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="headerTextExplanation" text="\%title" />
+   </HBox>
+   <HBox alignment="CENTER_LEFT" prefHeight="15.0" prefWidth="183.0" stylesheets="@../../style/islandOverview.css">
+      <VBox prefHeight="22.0" prefWidth="40.0" />
+      <Text fx:id="baseValue" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" text="Base:" />
+   </HBox>
+   <HBox prefHeight="18.0" prefWidth="291.0">
+      <VBox prefHeight="22.0" prefWidth="40.0"/>
+      <ListView fx:id="effectList" prefHeight="24.0" prefWidth="183.0">
+         <styleClass>
+            <String fx:value="explanation"/>
+            <String fx:value="tableHeadingText"/>
+            <String fx:value="jobsOverviewList"/>
+         </styleClass>
+         <stylesheets>
+            <URL value="@../../style/helpWindow.css"/>
+            <URL value="@../../style/jobsOverview.css"/>
+         </stylesheets>
+      </ListView>
+   </HBox>
+   <VBox prefHeight="14.0" prefWidth="291.0" />
+   <HBox>
+      <VBox prefHeight="22.0" prefWidth="42.0" />
+      <Text fx:id="totalValue" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" text="Total: " />
+   </HBox>
+   <VBox prefHeight="22.0" prefWidth="40.0" />
+</fx:root>

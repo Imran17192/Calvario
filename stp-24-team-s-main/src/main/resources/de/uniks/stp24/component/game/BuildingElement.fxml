@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="40.0" stylesheets="@../../style/islandOverview.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <HBox fx:id="jobProgressBox" alignment="CENTER" visible="false">
+      <ImageView fx:id="clockImage" fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets right="3.0"/>
+         </HBox.margin>
+         <Image url="@../../icons/stopwatch.png"/>
+      </ImageView>
+      <Text fx:id="jobTimeText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" text="x/x"/>
+   </HBox>
+   <Button fx:id="building" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;" styleClass="buildNewBuilding" />
+</fx:root>

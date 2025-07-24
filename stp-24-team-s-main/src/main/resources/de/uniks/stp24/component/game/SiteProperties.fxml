@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="250.0" styleClass="siteOverviewBackground" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.SitePropertiesComponent">
+    <ScrollPane fx:id="siteAmountScrollPane" hbarPolicy="NEVER" layoutX="47.0" layoutY="114.0"
+                maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0"
+                prefWidth="152.0" styleClass="sitesScrollPane" AnchorPane.bottomAnchor="244.0"
+                AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="114.0">
+        <GridPane fx:id="siteAmountGridPane">
+          <columnConstraints>
+              <ColumnConstraints hgrow="SOMETIMES" maxWidth="46.0" minWidth="10.0" prefWidth="25.0"/>
+              <ColumnConstraints hgrow="SOMETIMES" maxWidth="63.0" minWidth="10.0" prefWidth="27.0"/>
+              <ColumnConstraints hgrow="SOMETIMES" maxWidth="86.0" minWidth="10.0" prefWidth="28.0"/>
+              <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="10.0" prefWidth="28.0"/>
+              <ColumnConstraints hgrow="SOMETIMES" maxWidth="73.0" minWidth="10.0" prefWidth="28.0"/>
+          </columnConstraints>
+          <rowConstraints>
+              <RowConstraints maxHeight="83.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES"/>
+              <RowConstraints maxHeight="75.0" minHeight="0.0" prefHeight="21.0" vgrow="SOMETIMES"/>
+              <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES"/>
+              <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES"/>
+              <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES"/>
+              <RowConstraints maxHeight="20.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES"/>
+          </rowConstraints>
+        </GridPane>
+    </ScrollPane>
+    <Text fx:id="siteName" layoutX="52.0" layoutY="103.166015625" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="headerText" text="SiteName" AnchorPane.bottomAnchor="285.2470703125" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="90.65625" AnchorPane.topAnchor="78.0">
+        <font>
+          <Font size="20.0" />
+        </font>
+    </Text>
+    <ImageView fx:id="siteImage" fitHeight="50.0" fitWidth="50.0" layoutX="92.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="108.0" />
+    <Button fx:id="destroySiteButton" layoutX="71.0" layoutY="162.0" mnemonicParsing="false" onAction="#destroySite" prefHeight="25.0" prefWidth="24.0" styleClass="deleteButton">
+        <font>
+          <Font size="6.0" />
+        </font>
+    </Button>
+    <Button fx:id="buildSiteButton" layoutX="48.0" layoutY="162.0" mnemonicParsing="false" onAction="#buildSite" prefHeight="25.0" prefWidth="24.0" styleClass="buildButton">
+        <font>
+          <Font size="6.0" />
+        </font>
+    </Button>
+    <Text layoutX="122.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" text="Build" />
+    <Text layoutX="48.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" text="Consumes" />
+    <Text layoutX="125.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" text="Produces" />
+    <ListView fx:id="siteConsumesListView" layoutX="48.0" layoutY="261.0" prefHeight="80.0" prefWidth="64.0" style="-fx-background-color: transparent;" styleClass="resourceList" AnchorPane.leftAnchor="48.0" />
+    <ListView fx:id="siteProducesListView" layoutX="119.0" layoutY="261.0" prefHeight="80.0" prefWidth="64.0" style="-fx-background-color: transparent;" styleClass="resourceList" AnchorPane.rightAnchor="67.0" />
+    <ListView fx:id="siteCostsListView" layoutX="45.0" layoutY="191.0" orientation="HORIZONTAL" prefHeight="37.0" prefWidth="191.0" style="-fx-background-color: transparent;" styleClass="resourceList" />
+   <AnchorPane fx:id="jobPane" layoutX="25.0" layoutY="189.0" prefHeight="50.0" prefWidth="200.0" />
+    <Button fx:id="closeWindowButton" layoutX="201.0" layoutY="183.0" mnemonicParsing="false" onAction="#onClose" prefHeight="25.0" prefWidth="24.0" styleClass="rightTriangleButton">
+        <font>
+          <Font size="6.0" />
+        </font>
+    </Button>
+   <stylesheets>
+      <URL value="@../../style/islandOverview.css" />
+      <URL value="@../../style/ingameButtons.css" />
+   </stylesheets>
+</fx:root>

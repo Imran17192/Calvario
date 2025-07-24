@@ -1,0 +1,61 @@
+{
+  "id": "submerge",
+  "event_type": "bad",
+  "duration": 21,
+  "effects": [
+    {
+      "variable": "minerals",
+      "base": 0,
+      "multiplier": 0.5,
+      "bonus": 0,
+      "condType": null,
+      "condID": null,
+      "effected": null
+    },
+    {
+      "variable": "energy",
+      "base": 0,
+      "multiplier": 0.5,
+      "bonus": 0,
+      "condType": null,
+      "condID": null,
+      "effected": null
+    },
+    {
+      "variable": "food",
+      "base": 0,
+      "multiplier": 0.5,
+      "bonus": 0,
+      "condType": null,
+      "condID": null,
+      "effected": null
+    },
+    {
+      "variable": "fuel",
+      "base": 0,
+      "multiplier": 0.5,
+      "bonus": 0,
+      "condType": null,
+      "condID": null,
+      "effected": null
+    },
+    {
+      "variable": "alloys",
+      "base": 0,
+      "multiplier": 0.5,
+      "bonus": 0,
+      "condType": null,
+      "condID": null,
+      "effected": null
+    },
+    {
+      "variable": "consumer_goods",
+      "base": 0,
+      "multiplier": 0.5,
+      "bonus": 0,
+      "condType": null,
+      "condID": null,
+      "effected": null
+    }
+  ]
+}

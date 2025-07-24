@@ -1,0 +1,259 @@
+.marketBackground{
+    -fx-background-image: url("/de/uniks/stp24/assets/market/market_background.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.closeWindowButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/empireOverview/close_window_button.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.marketTitle{
+    -fx-font-family: "Baskerville Old Face";
+    -fx-fill: white;
+    -fx-font-size: 38;
+}
+
+.seasonTitle{
+    -fx-font-family: "Baskerville Old Face";
+    -fx-fill: white;
+    -fx-font-size: 20;
+}
+
+/*Buttons*/
+
+.alloysButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/alloys.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.consumerGoodButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/consumer_goods.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.energyButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/energy.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.foodButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/food.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.fuelButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/fuel.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.mineralButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/minerals.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.listViewStyle .list-cell{
+    -fx-background-color: transparent;
+}
+
+.listViewStyle .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+}
+
+.listViewStyle .scroll-bar:vertical {
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+}
+
+.listViewStyle .corner {
+    -fx-background-color: transparent; /* Versteckt das weiße Quadrat unten rechts */
+}
+
+
+.creditCoinIcon{
+    -fx-background-image: url("/de/uniks/stp24/icons/resources/credits.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.upArrowButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/up_arrow_button.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 80% 80%;
+    -fx-background-repeat: no-repeat;
+}
+
+.downArrowButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/down_arrow_button.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 80% 80%;
+    -fx-background-repeat: no-repeat;
+}
+
+.marketFeeIcon{
+    -fx-background-image: url("/de/uniks/stp24/assets/market/market_fee.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.defaultButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/button_element.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.amountBox{
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/red_frame.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+
+.everySeasonButtonDesign {
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/button_element.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+    -fx-font-size: 12;
+}
+
+.everySeasonButtonDesign:selected {
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/button_green.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+/*TextStyles*/
+.baskervilleOldFace {
+    -fx-font-family: "Baskerville Old Face";
+    -fx-font-size: 16px;
+    -fx-font-weight: normal;
+    -fx-fill: black;
+}
+
+
+.tempusSansITC {
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 16px;
+    -fx-font-weight: normal;
+    -fx-fill: black;
+}
+
+.javaneseText {
+    -fx-font-family: "Javanese Text";
+    -fx-font-size: 16px;
+    -fx-font-weight: normal;
+    -fx-fill: black;
+}
+
+/*Season Design*/
+
+.seasonalTradeBackground{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/jobsOverview/red_frame.png");
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.seasonalTradesListView .list-cell{
+    -fx-background-color: transparent;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+.seasonalTradesListView {
+    -fx-background-color: transparent;
+}
+
+.seasonalTradesListView .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-max-height: 0;
+}
+
+.seasonalTradesListView .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-padding: 5;
+}
+
+.seasonalTradesListView .scroll-bar .thumb {
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/scroller.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 90% 30%;
+    -fx-background-repeat: no-repeat;
+}
+
+.seasonalTradesListView .scroll-bar .track {
+    -fx-background-color: black;
+    -fx-background-radius: 5;
+}
+
+.seasonalTradesListView .corner {
+    -fx-background-color: transparent; /* Versteckt das weiße Quadrat unten rechts */
+}
+
+/*------------------------------------------------------------------------------------*/
+
+.playButton {
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/continue_seasonalTrade.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.playButton:selected {
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/pause_seasonalTrade.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.cancelTradeButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/market/buttons/cross_black.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-padding: 0;
+    -fx-border-width: 0;
+}
+
+.tempusSansITCSeasonComp{
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+    -fx-fill: white;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="50.0" type="VBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.IslandCellComponent">
+   <ImageView fx:id="islandImage" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#showIslandOverview" pickOnBounds="true" preserveRatio="true" />
+   <Label fx:id="islandNameLabel" />
+</fx:root>

@@ -1,0 +1,43 @@
+{
+  "id": "rogerFeast",
+  "event_type": "good",
+  "duration": 31,
+  "effects": [
+    {
+      "variable": "credits",
+      "base": 0,
+      "multiplier": 1.05,
+      "bonus": 0,
+      "condType": "system",
+      "condID": "system",
+      "effected": "multiplier"
+    },
+    {
+      "variable": "population",
+      "base": 0,
+      "multiplier": 1.05,
+      "bonus": 0,
+      "condType": "system",
+      "condID": "system",
+      "effected": "multiplier"
+    },
+    {
+      "variable": "food",
+      "base": 0,
+      "multiplier": 1.05,
+      "bonus": 0,
+      "condType": "system",
+      "condID": "system",
+      "effected": "multiplier"
+    },
+    {
+      "variable": "consumer_goods",
+      "base": 0,
+      "multiplier": 1.05,
+      "bonus": 0,
+      "condType": "system",
+      "condID": "system",
+      "effected": "multiplier"
+    }
+  ]
+}

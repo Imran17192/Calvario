@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="backgroundAnchorPane" prefHeight="860.0" prefWidth="1280.0" styleClass="background"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="de.uniks.stp24.controllers.BrowseGameController">
+    <StackPane fx:id="warningWindowContainer" alignment="BOTTOM_CENTER" visible="false" AnchorPane.bottomAnchor="0.0"
+               AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+    <HBox alignment="CENTER" fillHeight="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <AnchorPane>
+            <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="670.0" prefWidth="923.0"
+                  styleClass="background-box">
+                <VBox translateX="-30.0" translateY="50.0">
+                    <VBox>
+                        <VBox fx:id="browseGameVBoxButtons" alignment="CENTER" fillWidth="false"/>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <StackPane prefHeight="100.0" prefWidth="100.0" translateX="-80.0" translateY="-40.0">
+                                <ImageView fx:id="backgroundImage" fitHeight="160.0" fitWidth="160.0"
+                                           pickOnBounds="true" preserveRatio="true"/>
+                                <ImageView fx:id="portraitImage" fitHeight="160.0" fitWidth="160.0"
+                                           pickOnBounds="true" preserveRatio="true"/>
+                                <ImageView fx:id="frameImage" fitHeight="160.0" fitWidth="160.0"
+                                           pickOnBounds="true" preserveRatio="true"/>
+                            </StackPane>
+                            <VBox translateX="-94.0" HBox.hgrow="ALWAYS">
+                                <HBox translateY="-5.0">
+                                    <Button fx:id="edit_acc_b" alignment="TOP_LEFT" mnemonicParsing="false"
+                                            onAction="#editAccount" styleClass="edit-button"/>
+                                    <Button fx:id="log_out_b" mnemonicParsing="false" onAction="#logOut"
+                                            styleClass="logout-button"/>
+                                </HBox>
+                                <Label fx:id="userName" styleClass="user-name" text="USERNAME" translateY="3.0"/>
+                                <HBox alignment="CENTER_LEFT" spacing="3.0">
+                                    <Circle fill="#25c90b" radius="7.0" stroke="BLACK" strokeType="INSIDE"/>
+                                    <Label styleClass="online-text" text="Online"/>
+                                </HBox>
+                            </VBox>
+                        </HBox>
+                        <VBox fx:id="browseGameVBoxList" alignment="CENTER" fillWidth="false" translateY="-15.0">
+                            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="browse-game-title"
+                                  text="%browse.game" translateY="-10.0"/>
+                            <ListView fx:id="gameList" maxWidth="-Infinity" prefHeight="320.0" prefWidth="250.0"
+                                      styleClass="g-list-view" translateX="-5.0">
+                                <VBox.margin>
+                                    <Insets left="20.0" right="20.0"/>
+                                </VBox.margin>
+                            </ListView>
+                            <TextField fx:id="searchLine" alignment="CENTER" prefHeight="30.0" prefWidth="160.0"
+                                       promptText="%search.game" translateX="-10.0" translateY="2.0"/>
+                        </VBox>
+                    </VBox>
+                    <HBox alignment="CENTER" fillHeight="false" spacing="10.0" translateX="-8.0" translateY="5.0">
+                        <VBox>
+                            <Button fx:id="new_game_b" alignment="TOP_LEFT" mnemonicParsing="false"
+                                    onAction="#newGame" styleClass="new-game-button" text="%new"/>
+                            <Button fx:id="edit_game_b" alignment="TOP_LEFT" mnemonicParsing="false"
+                                    onAction="#editGame" styleClass="edit-game-button" text="%edit"/>
+                        </VBox>
+                        <VBox>
+                            <Button fx:id="load_game_b" alignment="TOP_RIGHT" contentDisplay="RIGHT"
+                                    mnemonicParsing="false" onAction="#loadGame" styleClass="load-game-button"
+                                    text="%load" textAlignment="RIGHT"/>
+                            <Button fx:id="del_game_b" alignment="TOP_RIGHT" contentDisplay="RIGHT"
+                                    mnemonicParsing="false" onAction="#deleteGame" styleClass="delete-game-button"
+                                    text="%delete" textAlignment="RIGHT"/>
+                        </VBox>
+                    </HBox>
+                </VBox>
+                <Pane fx:id="captainContainer" translateX="250.0" translateY="-195.0"/>
+            </VBox>
+            <StackPane fx:id="logoutWarningContainer" alignment="BOTTOM_CENTER" translateX="220.0" translateY="250.0"
+                       visible="false"/>
+        </AnchorPane>
+    </HBox>
+    <stylesheets>
+        <URL value="@../style/browseGame.css"/>
+    </stylesheets>
+</AnchorPane>

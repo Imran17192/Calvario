@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<AnchorPane fx:id="rootPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.controllers.InGameController">
+    <ScrollPane fx:id="mapScrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" pannable="true" style="-fx-background-color: TRANSPARENT;" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+        <Group fx:id="group" onMouseClicked="#resetZoomMouse">
+            <StackPane fx:id="zoomPane" style="-fx-background-color: TRANSPARENT;">
+                <Pane fx:id="gameBackground" prefHeight="0.0" prefWidth="0.0" styleClass="backgroundGame" />
+                <Pane fx:id="mapGrid">
+                </Pane>
+            <Pane fx:id="fogPane" />
+            <Pane fx:id="debugGrid" pickOnBounds="false" prefHeight="200.0" prefWidth="200.0" visible="false" />
+            </StackPane>
+            <StackPane fx:id="islandClaimingContainer" prefHeight="150.0" prefWidth="200.0" />
+        </Group>
+    </ScrollPane>
+    <StackPane fx:id="hintCaptainContainer" layoutX="20.0" prefHeight="0.0" prefWidth="0.0" />
+    <StackPane fx:id="clockComponentContainer" prefHeight="115.0" prefWidth="200.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="5.0" />
+    <StackPane fx:id="overviewContainer" prefHeight="600.0" prefWidth="400.0" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="40.0" />
+    <StackPane fx:id="buildingsWindow" layoutX="650.0" layoutY="40.0" prefHeight="350.0" prefWidth="200.0" AnchorPane.bottomAnchor="290.0" AnchorPane.rightAnchor="380.0" AnchorPane.topAnchor="80.0" />
+    <StackPane fx:id="buildingProperties" layoutX="650.0" layoutY="450.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="390.0" AnchorPane.topAnchor="440.0" />
+    <StackPane fx:id="siteProperties" layoutX="650.0" layoutY="290.0" prefHeight="350.0" prefWidth="200.0" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="380.0" AnchorPane.topAnchor="290.0" />
+    <HBox fx:id="contextMenuButtons" alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="611.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+        <padding>
+            <Insets left="30.0" />
+        </padding>
+    </HBox>
+    <StackPane fx:id="contextMenuContainer" alignment="CENTER_LEFT" prefHeight="550.0" prefWidth="400.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="70.0" />
+    <StackPane fx:id="technologiesContainer" layoutX="660.0" layoutY="300.0" prefHeight="550.0" prefWidth="400.0" AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="440.0" AnchorPane.rightAnchor="440.0" AnchorPane.topAnchor="95.0" />
+    <StackPane fx:id="contactDetailsContainer" prefHeight="500.0" prefWidth="350.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="70.0" />
+    <StackPane fx:id="deleteStructureWarningContainer" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="250.0" />
+    <Pane fx:id="shadow" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <StackPane id="eventContainer" fx:id="eventContainer" layoutX="450.0" layoutY="50.0" style=": ;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <StackPane fx:id="warContainer" layoutX="517.0" layoutY="292.0" prefHeight="260.0" prefWidth="450.0" />
+   <StackPane fx:id="battleResultContainer" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="250.0" />
+    <StackPane fx:id="pauseMenuContainer" layoutX="440.0" layoutY="40.0" prefHeight="600.0" prefWidth="400.0" style=": ;" visible="false" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="440.0" AnchorPane.rightAnchor="440.0" AnchorPane.topAnchor="40.0" />
+    <StackPane fx:id="helpWindowContainer" layoutX="450.0" layoutY="50.0" prefHeight="600.0" prefWidth="400.0" style=": ;" visible="false" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="430.0" AnchorPane.topAnchor="50.0" />
+   <StackPane fx:id="gameResultContainer" layoutX="520.0" layoutY="292.0" prefHeight="260.0" prefWidth="450.0" AnchorPane.leftAnchor="415.0" AnchorPane.rightAnchor="415.0" />
+    <stylesheets>
+        <URL value="@../style/styles.css" />
+        <URL value="@../style/ingameButtons.css" />
+    </stylesheets>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" type="AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.technology.TechnologyCategoryComponent">
+   <VBox fx:id="technologieCategoryBox" alignment="TOP_CENTER" layoutX="210.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="700.0" minWidth="900.0" prefHeight="700.0" prefWidth="900.0" styleClass="technologiesCategoryBackground" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <HBox>
+         <VBox HBox.hgrow="ALWAYS">
+            <Button mnemonicParsing="false" onAction="#goBack" prefHeight="50.0" prefWidth="50.0" id="backButton" translateX="18.0" translateY="85.0" />
+         </VBox>
+         <HBox alignment="CENTER" translateX="-20.0" translateY="10.0">
+            <ImageView fx:id="technologyImage" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="technologyNameText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="technologieText" text="\%technology.name" translateY="2.0">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+         </HBox>
+         <VBox alignment="TOP_RIGHT" HBox.hgrow="ALWAYS">
+            <Button fx:id="closeCategoryButton" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#close" styleClass="closeButton" translateX="-45.0" translateY="90.0" />
+         </VBox>
+      </HBox>
+      <VBox VBox.vgrow="ALWAYS">
+         <HBox alignment="TOP_CENTER" prefHeight="450.0" prefWidth="200.0" spacing="50.0" translateX="-15.0">
+            <padding>
+               <Insets top="30.0" />
+            </padding>
+            <AnchorPane>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <VBox fx:id="researchLeftVBox" alignment="TOP_CENTER" layoutY="2.0">
+                  <Text fx:id="researchText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="%technologies.research" translateX="-5.0" translateY="-2.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Text>
+                  <ListView fx:id="researchListView" maxHeight="280.0" minHeight="290.0" prefHeight="300.0" prefWidth="320.0" styleClass="technologies-list-view" translateY="8.0" />
+                  <HBox alignment="CENTER" spacing="5.0">
+                     <Label fx:id="currentResearchResourceLabel" styleClass="currentResearchLabel">
+                        <font>
+                           <Font size="20.0" />
+                        </font>
+                     </Label>
+                     <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../../icons/resources/research.png" />
+                     </ImageView>
+                     <VBox.margin>
+                        <Insets top="12.0" />
+                     </VBox.margin>
+                  </HBox>
+               </VBox>
+               <StackPane fx:id="researchJobContainer" layoutY="83.0" prefHeight="190.0" prefWidth="320.0" />
+            </AnchorPane>
+            <VBox alignment="TOP_CENTER" translateX="-5.0">
+               <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="%technologies.unlocked" translateX="-5.0" translateY="-2.0">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets />
+                  </VBox.margin>
+               </Text>
+               <ListView fx:id="unlockedListView" maxHeight="280.0" minHeight="290.0" prefHeight="300.0" prefWidth="320.0" styleClass="technologies-list-view" translateY="8.0" />
+            </VBox>
+         </HBox>
+      </VBox>
+   </VBox>
+   <stylesheets>
+      <URL value="@../../../style/ingameButtons.css" />
+      <URL value="@../../../style/technology.css" />
+   </stylesheets>
+</fx:root>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.*?>
+<fx:root prefHeight="337.0" prefWidth="501.0" stylesheets="@../../style/islandClaiming.css" type="Pane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.IslandClaimingComponent">
+   <Pane layoutX="9.0" layoutY="96.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="148.0" prefWidth="255.0" styleClass="papyrusBackground">
+      <Text fx:id="islandTypeText" layoutX="-43.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="islandTypeText" text="Text" textAlignment="CENTER" wrappingWidth="338.0" />
+      <ImageView fx:id="capacityImage" fitHeight="20.0" fitWidth="20.0" layoutX="169.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="colonizersImage" fitHeight="20.0" fitWidth="20.0" layoutX="100.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="timerImage" fitHeight="20.0" fitWidth="20.0" layoutX="38.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="colonizersText" layoutX="126.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="numText" text="1" />
+      <Text fx:id="timeText" layoutX="64.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="numText" text="3" />
+      <Text fx:id="capacityText" layoutX="194.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="numText" text="16" />
+      <SplitPane fx:id="exploreButtonControlPane" layoutX="131.0" layoutY="79.0" styleClass="controlPane">
+         <items>
+            <Button fx:id="exploreButton" mnemonicParsing="false" onAction="#exploreIsland" styleClass="woodenButton" text="Explore" textAlignment="CENTER">
+               <effect>
+                  <DropShadow height="0.0" offsetX="3.0" offsetY="3.0" radius="0.0" spread="1.0" width="0.0">
+                     <color>
+                        <Color opacity="0.25" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </items>
+         <tooltip>
+            <Tooltip fx:id="claimingTooltip" prefWidth="20.0" styleClass="controlTooltip" textAlignment="CENTER" wrapText="true" />
+         </tooltip>
+      </SplitPane>
+      <ProgressBar fx:id="jobProgressBar" layoutX="116.0" layoutY="88.0" prefHeight="18.0" prefWidth="85.0" progress="0.0" styleClass="jobProgressBar">
+         <opaqueInsets>
+            <Insets top="-1.0" />
+         </opaqueInsets>
+      </ProgressBar>
+      <Button fx:id="cancelJobButton" layoutX="210.0" layoutY="88.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cancelJob" prefHeight="18.0" prefWidth="18.0" styleClass="cancelJobButton" />
+      <Button fx:id="closeClaimingButton" layoutX="227.0" layoutY="-4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="25.0" styleClass="closeButtonClaiming" />
+      <SplitPane fx:id="travelButtonControlPane" layoutX="27.0" layoutY="79.0" styleClass="controlPane">
+         <items>
+            <Button fx:id="travelButton" mnemonicParsing="false" onAction="#travelToIsland" styleClass="woodenButton" text="Travel" textAlignment="CENTER">
+               <effect>
+                  <DropShadow height="0.0" offsetX="3.0" offsetY="3.0" radius="0.0" spread="1.0" width="0.0">
+                     <color>
+                        <Color opacity="0.25" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </items>
+         <tooltip>
+            <Tooltip fx:id="travelTooltip" prefWidth="20.0" styleClass="controlTooltip" textAlignment="CENTER" wrapText="true" />
+         </tooltip>
+      </SplitPane>
+   </Pane>
+   <Pane fx:id="colonizePane" layoutX="264.0" layoutY="16.0" prefHeight="307.0" prefWidth="223.0" styleClass="papyrusBackgroundExplored">
+      <ListView fx:id="sitesListView" layoutX="31.0" layoutY="62.0" prefHeight="240.0" prefWidth="91.0" styleClass="commonListView" />
+      <ListView fx:id="costsListView" layoutX="107.0" layoutY="70.0" prefHeight="80.0" prefWidth="102.0" styleClass="commonListView" />
+      <ListView fx:id="consumeListView" layoutX="107.0" layoutY="157.0" prefHeight="132.0" prefWidth="102.0" styleClass="commonListView" />
+      <Text layoutX="135.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="numText" text="Costs" />
+      <Text layoutX="118.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="numText" text="Consumes" />
+      <Text fx:id="noSitesText" layoutX="31.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="numText" text="%claiming.noSites" textAlignment="CENTER" wrappingWidth="76.51953125" />
+   </Pane>
+</fx:root>

@@ -1,0 +1,25 @@
+{
+  "id": "dutchman",
+  "event_type": "bad",
+  "duration": 26,
+  "effects": [
+    {
+      "variable": "fuel",
+      "base": 0,
+      "multiplier": 1,
+      "bonus": -20,
+      "condType": null,
+      "condID": null,
+      "effected": null
+    },
+    {
+      "variable": "credits",
+      "base": 0,
+      "multiplier": 1,
+      "bonus": -50,
+      "condType": null,
+      "condID": null,
+      "effected": null
+    }
+  ]
+}

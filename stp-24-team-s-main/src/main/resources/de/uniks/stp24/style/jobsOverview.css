@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Baskerville';
+    src: url("/de/uniks/stp24/fonts/Baskerville.ttf");
+}
+
+.jobsOverviewBackground {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/jobsOverview/job_overview_background.png");
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.jobsOverviewList {
+    -fx-background-color: transparent;
+}
+
+.jobsOverviewList .list-cell {
+    -fx-background-color: transparent;
+}
+
+.jobsOverviewList .scroll-bar:vertical {
+    -fx-background-image: url("/de/uniks/stp24/icons/other/black_square.png");
+    -fx-background-position: center;
+    -fx-background-repeat: repeat-y;
+    -fx-background-color: transparent;
+    -fx-background-size: 15% 100%;
+}
+
+.jobsOverviewList .scroll-bar:vertical .thumb {
+    -fx-padding: 15;
+    -fx-pref-height: 15;
+    -fx-pref-columns: 15;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-size: auto;
+    -fx-background-image: url("/de/uniks/stp24/icons/other/scroller.png");
+}
+
+.jobsOverviewList .scroll-bar:vertical .track {
+    -fx-padding: 15;
+}
+
+.jobsOverviewList .scroll-bar:vertical .increment-button,
+.jobsOverviewList .scroll-bar:vertical .decrement-button {
+    -fx-scale-x: 0;
+    -fx-scale-y: 0;
+}
+
+.jobsOverviewList .scroll-bar:vertical .increment-button .increment-arrow,
+.jobsOverviewList .scroll-bar:vertical .decrement-button .decrement-arrow {
+    -fx-scale-x: 0;
+    -fx-scale-y: 0;
+}
+
+.jobsHeaderText {
+    -fx-font-family: 'Baskerville';
+    -fx-font-smoothing-type: lcd;
+    -fx-font-weight: bolder;
+    -fx-fill: white;
+    -fx-font-size: 28;
+}
+
+.jobElementBackground {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/jobsOverview/red_frame.png");
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.jobIslandNameText {
+    -fx-font-family: "Blackadder ITC";
+    -fx-font-size: 22;
+}
+
+.jobTypeText {
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 14;
+}
+
+.jobTimerText {
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-font-size: 14;
+}
+
+.deleteJobButton {
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/cancel_button.png");
+}
+
+.inspectJobButton {
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-image: url("/de/uniks/stp24/icons/buttons/lupe.png");
+}
+
+.jobsOverviewButton {
+    -fx-font-size: 10;
+    -fx-font-family: "Baskerville";
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/button_element.png");
+    -fx-background-size: 100% 100%;
+    -fx-pref-width: 70;
+    -fx-pref-height: 25;
+}
+
+.jobsOverviewButton:selected {
+    -fx-background-image: url("/de/uniks/stp24/assets/buttons/button_job_selected.png");
+}

@@ -1,0 +1,116 @@
+.empireOverviewBackground{
+    -fx-background-image: url("/de/uniks/stp24/assets/empireOverview/empire_overview_window.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.empireOverviewButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/empireOverview/empire_overview_button.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+
+.empireOverviewTextWhite{
+    -fx-font-family: "PT Serif";
+    -fx-fill: white;
+}
+
+.empireOverviewTextBlack{
+    -fx-font-family: "Tempus Sans ITC";
+    -fx-fill: black;
+    -fx-font-size: 13;
+}
+
+.closeWindowButton{
+    -fx-background-image: url("/de/uniks/stp24/assets/empireOverview/close_window_button.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.portraitBackground{
+    -fx-background-image: url("/de/uniks/stp24/assets/empireOverview/empire_overview_captain_frame.png");
+    -fx-background-color: transparent;
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+.payload{
+    -fx-hgap: 3px;
+    -fx-padding: 6px;
+
+    -fx-background-color: #2969c0;
+    -fx-background-radius: 20px;
+
+    -fx-border-radius: 20px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 4, 0, 0, 0);
+}
+
+.empirePortraitImage{
+    width: 15px;
+    height: 15px;
+}
+
+.islandLabel{
+    -fx-font-family: "Blackadder ITC";
+    -fx-fill: black;
+    -fx-font-size:  26;
+}
+
+.empireOverviewSc .scroll-bar:vertical{
+    -fx-border-width: 10;
+}
+
+.textTransparent{
+    -fx-background-color: transparent;
+}
+
+.scroll-pane{
+    -fx-background-color: transparent;
+    -fx-opacity: 1;
+}
+
+.scroll-pane > .viewport{
+    -fx-background-color: transparent;
+    -fx-opacity: 1;
+}
+
+.scroll-pane .scroll-bar:horizontal{
+    -fx-opacity: 0;
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .scroll-bar:vertical{
+    -fx-opacity: 0;
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button{
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-opacity: 1;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow{
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-shape: "";
+    -fx-opacity: 1;
+
+}
+
+.scroll-pane .corner{
+    -fx-background-color: transparent;
+    -fx-opacity: 1;
+}

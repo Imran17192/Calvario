@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<AnchorPane fx:id="backgroundAnchorPane" prefHeight="860.0" prefWidth="1280.0" styleClass="background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.controllers.EditAccController">
+   <HBox alignment="CENTER" stylesheets="@../style/avatar.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="817.0" prefWidth="1101.0">
+         <VBox fx:id="cardBackgroundVBox" alignment="CENTER" prefHeight="806.0" prefWidth="1118.0">
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="806.0" prefWidth="1095.0">
+               <AnchorPane prefHeight="799.0" prefWidth="1097.0">
+                  <children>
+                     <AnchorPane layoutX="120.0" layoutY="110.0" prefHeight="670.0" prefWidth="930.0" styleClass="editAccountBackground" />
+                  </children>
+               </AnchorPane>
+               <HBox fx:id="editAccHBox" alignment="CENTER" layoutY="-6.0" prefHeight="802.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-6.0">
+                  <AnchorPane prefHeight="570.0" prefWidth="500.0">
+                     <VBox fx:id="editAccVBoxLeftToBlur" alignment="CENTER" prefHeight="400.0" prefWidth="550.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="442.0">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </VBox>
+                        <AnchorPane prefHeight="349.0" prefWidth="513.0">
+                           <VBox alignment="CENTER" layoutX="151.0" layoutY="190.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="165.0" prefWidth="189.0">
+                              <StackPane>
+                                 <ImageView fx:id="backgroundImage" fitHeight="175.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true" styleClass="avatarImageLayout" />
+                                 <ImageView fx:id="portraitImage" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" styleClass="avatarImageLayoutPortrait">
+                                    <StackPane.margin>
+                                       <Insets left="5.0" top="5.0" />
+                                    </StackPane.margin>
+                                 </ImageView>
+                                 <ImageView fx:id="frameImage" fitHeight="175.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true" styleClass="avatarImageLayout">
+                                    <StackPane.margin>
+                                       <Insets left="5.0" />
+                                    </StackPane.margin>
+                                 </ImageView>
+                              </StackPane>
+                           </VBox>
+                           <ToggleButton fx:id="lockBackgroundButton" layoutX="321.0" layoutY="186.0" mnemonicParsing="false" onAction="#lockBackground" prefHeight="25.0" prefWidth="25.0" styleClass="newLock" />
+                           <ToggleButton fx:id="lockPortraitButton" layoutX="322.0" layoutY="251.0" mnemonicParsing="false" onAction="#lockPortrait" prefHeight="25.0" prefWidth="25.0" styleClass="newLock" />
+                           <ToggleButton fx:id="lockFrameButton" layoutX="322.0" layoutY="309.0" mnemonicParsing="false" onAction="#lockFrame" prefHeight="25.0" prefWidth="25.0" styleClass="newLock" />
+                           <Text fx:id="errorLabelEditAcc" layoutX="65.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="%text">
+                              <font>
+                                 <Font size="15.0" />
+                              </font>
+                           </Text>
+                           <Button fx:id="randomizeAvatar" layoutX="210.0" layoutY="164.0" mnemonicParsing="false" onAction="#randomize" prefHeight="32.0" prefWidth="34.0" styleClass="randomButton" />
+                           <Label fx:id="imageCodeLabel" layoutX="253.0" layoutY="166.0" prefHeight="12.0" prefWidth="130.0" style="-fx-background-color: transparent;" text="            Label " textAlignment="CENTER" textFill="WHITE">
+                              <font>
+                                 <Font size="18.0" />
+                              </font>
+                           </Label>
+                           <Button fx:id="nextBackgroundButton" layoutX="380.0" layoutY="181.0" mnemonicParsing="false" onAction="#showNextBackground" styleClass="rightArrow" />
+                           <Button fx:id="nextPotraitButton" layoutX="379.0" layoutY="248.0" mnemonicParsing="false" onAction="#showNextPortrait" styleClass="rightArrow" />
+                           <Button fx:id="nextFrameButton" layoutX="380.0" layoutY="313.0" mnemonicParsing="false" onAction="#showNextFrame" styleClass="rightArrow" />
+                           <Button fx:id="lastBackgroundButton" layoutX="72.0" layoutY="181.0" mnemonicParsing="false" onAction="#showLastBackground" styleClass="leftArrow" />
+                           <Button fx:id="lastPotraitButton" layoutX="72.0" layoutY="248.0" mnemonicParsing="false" onAction="#showLastPortrait" styleClass="leftArrow" />
+                           <Button fx:id="lastFrameButton" layoutX="72.0" layoutY="313.0" mnemonicParsing="false" onAction="#showLastFrame" styleClass="leftArrow" />
+                           <Text layoutX="132.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="editAccTitle" text="EDIT ACCOUNT" wrappingWidth="314.13682556152344" />
+                        </AnchorPane>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="483.0" prefWidth="500.0">
+                           <VBox fx:id="editAccVBoxRightToBlur" alignment="BOTTOM_CENTER" layoutX="14.0" layoutY="33.0" prefHeight="32.0" prefWidth="53.0" spacing="25.0" AnchorPane.bottomAnchor="465.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="275.0" AnchorPane.topAnchor="33.0" />
+                           <Pane fx:id="captainContainer" layoutX="416.0" layoutY="46.0" prefHeight="27.0" prefWidth="79.0" />
+                           <ToggleButton fx:id="changeUserInfoButton" layoutX="357.0" layoutY="271.0" mnemonicParsing="false" onAction="#changeUserInfo" prefHeight="54.0" prefWidth="49.0" styleClass="editButton">
+                              <font>
+                                 <Font size="15.0" />
+                              </font>
+                           </ToggleButton>
+                           <Button fx:id="deleteUserButton" layoutX="360.0" layoutY="231.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="39.0" prefWidth="40.0" styleClass="deleteButton">
+                              <font>
+                                 <Font size="15.0" />
+                              </font>
+                           </Button>
+                           <Button fx:id="goBackButton" layoutX="90.0" layoutY="252.0" mnemonicParsing="false" onAction="#goBack" prefHeight="41.0" prefWidth="40.0" styleClass="returnButton">
+                              <font>
+                                 <Font size="15.0" />
+                              </font>
+                           </Button>
+                           <VBox alignment="BOTTOM_CENTER" layoutX="121.0" layoutY="46.0" maxWidth="-Infinity" prefHeight="150.0" prefWidth="270.0">
+                              <TextField fx:id="usernameInput" alignment="CENTER" editable="false" maxWidth="355.0" prefHeight="88.0" prefWidth="270.0" promptText="%username">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="textFieldStyle" />
+                                    <String fx:value="javaneseTextWhite" />
+                                 </styleClass>
+                              </TextField>
+                              <TextField fx:id="passwordInput" alignment="CENTER" editable="false" prefHeight="87.0" prefWidth="270.0" promptText="%password">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <styleClass>
+                                    <String fx:value="textFieldStyle" />
+                                    <String fx:value="javaneseTextWhite" />
+                                 </styleClass>
+                              </TextField>
+                           </VBox>
+                           <Button fx:id="safeAvatarButton" layoutX="197.0" layoutY="-16.0" mnemonicParsing="false" onAction="#safeAvatarChanges" prefHeight="31.0" prefWidth="72.0" text="%save" textFill="WHITE">
+                              <styleClass>
+                                 <String fx:value="greenButton" />
+                                 <String fx:value="baskervilleOldFaceWhite" />
+                              </styleClass>
+                           </Button>
+                           <Button fx:id="cancelAvatarButton" layoutX="270.0" layoutY="-16.0" mnemonicParsing="false" onAction="#cancelAvatarChanges" prefHeight="31.0" prefWidth="72.0" text="%cancel" textFill="WHITE">
+                              <styleClass>
+                                 <String fx:value="redButton" />
+                                 <String fx:value="baskervilleOldFaceWhite" />
+                              </styleClass>
+                           </Button>
+                           <ImageView fx:id="editIconImageView" fitHeight="38.0" fitWidth="40.0" layoutX="456.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true" />
+                           <ToggleButton fx:id="editAvatarButton" layoutX="165.0" layoutY="-18.0" mnemonicParsing="false" onAction="#changeUserAvatar" prefHeight="52.0" prefWidth="154.0" styleClass="editButtonAvatar" />
+                           <HBox alignment="CENTER" layoutX="164.0" layoutY="244.0" prefHeight="97.0" prefWidth="200.0" spacing="15.0">
+                              <VBox prefHeight="97.0" prefWidth="200.0">
+                                 <children>
+                                    <Button fx:id="saveChangesButton" mnemonicParsing="false" onAction="#saveChanges" prefHeight="30.0" prefWidth="176.0" styleClass="greenButton" text="%save" textFill="WHITE" visible="false">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button fx:id="cancelChangesButton" mnemonicParsing="false" onAction="#cancelChanges" prefHeight="28.0" prefWidth="176.0" styleClass="redButton" text="%cancel" textFill="WHITE" visible="false">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </HBox>
+                        </AnchorPane>
+                     </VBox>
+                  </AnchorPane>
+               </HBox>
+               <StackPane fx:id="warningScreenContainer" prefHeight="200.0" prefWidth="300.0" visible="false" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="100.0" />
+            </AnchorPane>
+         </VBox>
+      </VBox>
+   </HBox>
+</AnchorPane>

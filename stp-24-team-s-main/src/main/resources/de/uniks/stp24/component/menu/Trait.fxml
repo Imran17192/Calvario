@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#showDetails" onMouseExited="#unShowDetails" prefHeight="25.0" prefWidth="225.0" style="-fx-background-color: transparent;" stylesheets="@../../style/empireConfiguration.css" type="Pane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.menu.TraitComponent">
+   <HBox layoutY="4.0" prefHeight="26.0" prefWidth="225.0">
+      <VBox prefHeight="26.0" prefWidth="33.0">
+         <HBox.margin>
+            <Insets left="30.0"/>
+         </HBox.margin>
+         <Text fx:id="traitName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="traitsFont" text="Text"
+               wrappingWidth="120.0">
+            <VBox.margin>
+               <Insets top="1.0"/>
+            </VBox.margin>
+         </Text>
+      </VBox>
+      <HBox prefHeight="26.0" prefWidth="74.0">
+         <VBox alignment="TOP_CENTER">
+            <VBox prefHeight="2.0" prefWidth="14.0" />
+            <ImageView fitHeight="13.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../../assets/empireConfiguration/trait_point.png" />
+            </ImageView>
+         </VBox>
+         <Label fx:id="costText" prefHeight="18.0" prefWidth="20.0" styleClass="traitsFont" text="Label" wrapText="true">
+            <HBox.margin>
+               <Insets left="4.0" />
+            </HBox.margin></Label>
+         <VBox prefHeight="26.0" prefWidth="13.0" />
+         <AnchorPane>
+            <Button fx:id="unChooseTraitButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#unChooseTrait" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: transparent;" styleClass="uncheckMark" AnchorPane.topAnchor="3.0" />
+            <Button fx:id="chooseTraitButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#chooseTrait" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: transparent;" styleClass="checkMark" AnchorPane.topAnchor="3.0" />
+            <HBox.margin>
+               <Insets left="-15.0" />
+            </HBox.margin>
+         </AnchorPane>
+         <HBox.margin>
+            <Insets left="-15.0" />
+         </HBox.margin>
+      </HBox>
+   </HBox>
+</fx:root>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0"
+         prefWidth="280.0" styleClass="buildingDetailsBackground" stylesheets="@../../style/islandOverview.css"
+         type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="de.uniks.stp24.component.game.BuildingPropertiesComponent">
+    <ImageView fx:id="buildingImage" fitHeight="49.0" fitWidth="51.0" layoutX="37.0" layoutY="21.0" pickOnBounds="true"
+               preserveRatio="true" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="21.0">
+    </ImageView>
+    <Text fx:id="buildingName" layoutX="102.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          styleClass="buildingName" text="Building_Name" textAlignment="CENTER" wrappingWidth="103.0"
+          AnchorPane.leftAnchor="102.0">
+        <font>
+            <Font size="6.0"/>
+        </font>
+    </Text>
+    <Button fx:id="destroyButton" layoutX="50.0" layoutY="70.0" mnemonicParsing="false" onAction="#destroyBuilding"
+            prefHeight="25.0" prefWidth="25.0" style="-fx-font-size: 12;" styleClass="deleteButton">
+        <font>
+            <Font size="6.0"/>
+        </font>
+    </Button>
+    <Button fx:id="buyButton" layoutX="50.0" layoutY="70.0" mnemonicParsing="false" onAction="#buyBuilding"
+            prefHeight="25.0" prefWidth="25.0" style="-fx-font-size: 6;" styleClass="buildButton" textFill="#13b91b">
+        <font>
+            <Font size="6.0"/>
+        </font>
+    </Button>
+    <ListView fx:id="buildingCostsListView" layoutX="86.0" layoutY="66.0" orientation="HORIZONTAL" prefHeight="38.0"
+              prefWidth="158.0" style="-fx-background-color: transparent;" styleClass="resourceList"/>
+    <ListView fx:id="buildingConsumesListView" layoutX="37.0" layoutY="129.0" prefHeight="58.0" prefWidth="88.0"
+              style="-fx-background-color: transparent;" styleClass="resourceList" AnchorPane.leftAnchor="37.0"/>
+    <Text layoutX="45.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText"
+          text="%consumes"/>
+    <ListView fx:id="buildingProducesListView" layoutX="131.0" layoutY="128.0" prefHeight="66.0" prefWidth="115.0"
+              style="-fx-background-color: transparent;" styleClass="resourceList" AnchorPane.rightAnchor="34.0"/>
+    <Text layoutX="144.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText"
+          text="%produces"/>
+    <Pane fx:id="jobProgressPane" layoutX="68.0" layoutY="60.0" maxHeight="-Infinity" maxWidth="-Infinity"
+          minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="216.0"/>
+    <Text layoutX="97.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText"
+          text="%costs"/>
+    <Button fx:id="closeButton" layoutX="173.0" layoutY="80.0" mnemonicParsing="false" onAction="#onClose"
+            prefHeight="25.0" prefWidth="25.0" styleClass="rightTriangleButton" AnchorPane.rightAnchor="6.0">
+        <font>
+            <Font size="6.0"/>
+        </font>
+    </Button>
+    <Pane fx:id="textInfoPane" layoutX="140.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity"
+          minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="75.0">
+        <Label fx:id="textInfoLabel" layoutX="15.0" layoutY="21.0" prefHeight="70.0" prefWidth="75.0"
+               styleClass="tableHeadingText" textAlignment="CENTER" translateX="-15.0" translateY="-21.0"
+               wrapText="true"/>
+    </Pane>
+</fx:root>

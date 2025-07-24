@@ -1,0 +1,34 @@
+{
+  "id": "pestilence",
+  "event_type": "bad",
+  "duration": 16,
+  "effects": [
+    {
+      "variable": "population",
+      "base": 0,
+      "multiplier": 1,
+      "bonus": -20,
+      "condType": null,
+      "condID": null,
+      "effected": null
+    },
+    {
+      "variable": "food",
+      "base": 0,
+      "multiplier": 0.5,
+      "bonus": 0,
+      "condType": null,
+      "condID": null,
+      "effected": null
+    },
+    {
+      "variable": "energy",
+      "base": 40,
+      "multiplier": 1,
+      "bonus": 0,
+      "condType": null,
+      "condID": null,
+      "effected": null
+    }
+  ]
+}

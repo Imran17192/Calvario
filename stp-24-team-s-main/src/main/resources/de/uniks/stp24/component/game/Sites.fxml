@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+<fx:root prefHeight="184.0" prefWidth="374.0" type="Pane" xmlns="http://javafx.com/javafx/21"
+         xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.SitesComponent">
+   <HBox alignment="BOTTOM_CENTER" layoutY="10.0" prefHeight="42.0" prefWidth="374.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="headerText" text="%sites"/>
+   </HBox>
+   <ListView fx:id="sitesListView" layoutX="85.0" layoutY="42.0" orientation="HORIZONTAL" prefHeight="92.0"
+             prefWidth="289.0" styleClass="sitesListView"/>
+   <Text fx:id="noSitesText" layoutX="131.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0"
+         styleClass="tableHeadingText" text="%claiming.noSites"/>
+</fx:root>

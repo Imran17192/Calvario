@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<fx:root alignment="CENTER" maxWidth="290.0" prefWidth="290.0" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.fleetManager.ShipTypesOfFleetComponent">
+   <HBox alignment="CENTER" translateY="10.0">
+         <VBox HBox.hgrow="ALWAYS">
+               <Label fx:id="typeLabel" text="Type" VBox.vgrow="ALWAYS">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+            <padding>
+               <Insets right="20.0" />
+            </padding>
+         </VBox>
+         <HBox alignment="CENTER_LEFT" spacing="10.0" HBox.hgrow="ALWAYS">
+               <Button fx:id="decrementSizeButton" maxHeight="22.0" maxWidth="22.0" minHeight="22.0" minWidth="22.0" mnemonicParsing="false" onAction="#decrementSize" prefHeight="22.0" prefWidth="22.0" styleClass="fleet-decrement-button" />
+               <Label fx:id="sizeLabel" text="size">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+               <Button fx:id="incrementSizeButton" maxHeight="22.0" maxWidth="22.0" minHeight="22.0" minWidth="22.0" mnemonicParsing="false" onAction="#incrementSize" prefHeight="22.0" prefWidth="22.0" styleClass="fleet-increment-button" />
+            <HBox.margin>
+               <Insets right="32.0" />
+            </HBox.margin>
+         </HBox>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </HBox>
+   <HBox alignment="CENTER_RIGHT">
+         <Button fx:id="buildShipButton" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxHeight="25.0" maxWidth="25.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#buildShip" prefHeight="25.0" prefWidth="25.0" styleClass="green-build-button" />
+   </HBox>
+   <padding>
+      <Insets bottom="13.0" left="15.0" right="10.0" top="20.0" />
+   </padding>
+</fx:root>

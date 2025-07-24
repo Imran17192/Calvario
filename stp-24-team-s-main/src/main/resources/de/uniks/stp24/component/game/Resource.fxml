@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<fx:root alignment="CENTER_LEFT" maxWidth="-Infinity" prefHeight="10.0" prefWidth="250.0" style="-fx-background-color: transparent;" stylesheets="@../../style/storageOverview.css" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.ResourceComponent">
+   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="180.0" style="-fx-background-color: transparent;">
+      <HBox.margin>
+         <Insets left="5.0" />
+      </HBox.margin>
+      <ImageView fx:id="resourceIconImageView" fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../icons/resources/fuel.png" />
+      </ImageView>
+      <Text fx:id="countText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="resourceText" text="x200">
+         <HBox.margin>
+            <Insets left="5.0" />
+         </HBox.margin>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="descriptionText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="resourceText" text="Description">
+         <HBox.margin>
+            <Insets left="3.0" />
+         </HBox.margin>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+   </HBox>
+   <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: transparent;">
+      <HBox.margin>
+         <Insets right="2.0" />
+      </HBox.margin>
+      <Text fx:id="changePerSeasonText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="resourceText" text="+300">
+         <font>
+            <Font size="10.0" />
+         </font></Text>
+   </HBox>
+</fx:root>

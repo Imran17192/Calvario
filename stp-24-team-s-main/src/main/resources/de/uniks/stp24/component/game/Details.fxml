@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<fx:root prefHeight="248.0" prefWidth="332.0" stylesheets="@../../style/islandOverview.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.stp24.component.game.DetailsComponent">
+<VBox alignment="CENTER_RIGHT" prefHeight="209.0" prefWidth="332.0" style="-fx-background-color: transparent;" stylesheets="@../../style/islandOverview.css">
+      <Text fx:id="title" strokeType="OUTSIDE" strokeWidth="0.0" text="%details" wrappingWidth="217.7578125" />
+   <HBox alignment="CENTER_LEFT" prefHeight="126.0" prefWidth="333.0" styleClass="tableHeadingText">
+         <VBox prefHeight="126.0" prefWidth="98.0" />
+      <VBox prefHeight="82.0" prefWidth="201.0">
+         <HBox alignment="CENTER" prefHeight="23.0" prefWidth="225.0">
+               <ImageView fx:id="res1Pic" fitHeight="25.0" fitWidth="25.0" />
+            <VBox prefHeight="25.0" prefWidth="6.0" />
+            <Text fx:id="amount1" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" wrappingWidth="37.46875" />
+               <ImageView fx:id="res2Pic" fitHeight="25.0" fitWidth="25.0" />
+            <VBox prefHeight="25.0" prefWidth="6.0" />
+            <Text fx:id="amount2" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" wrappingWidth="37.46875" />
+               <ImageView fx:id="res3Pic" fitHeight="25.0" fitWidth="25.0" />
+            <VBox prefHeight="25.0" prefWidth="6.0" />
+            <Text fx:id="amount3" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" wrappingWidth="37.46875" />
+         </HBox>
+         <HBox alignment="CENTER" prefHeight="23.0" prefWidth="225.0">
+               <ImageView fx:id="res4Pic" fitHeight="25.0" fitWidth="25.0" />
+            <VBox prefHeight="25.0" prefWidth="6.0" />
+            <Text fx:id="amount4" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" wrappingWidth="37.46875" />
+               <ImageView fx:id="res5Pic" fitHeight="25.0" fitWidth="25.0" />
+            <VBox prefHeight="25.0" prefWidth="6.0" />
+            <Text fx:id="amount5" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" wrappingWidth="37.46875" />
+               <ImageView fx:id="res6Pic" fitHeight="25.0" fitWidth="25.0" />
+            <VBox prefHeight="25.0" prefWidth="6.0" />
+            <Text fx:id="amount6" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" wrappingWidth="37.46875" />
+         </HBox>
+         <HBox alignment="CENTER" prefHeight="23.0" prefWidth="225.0">
+               <ImageView fx:id="res7Pic" fitHeight="25.0" fitWidth="25.0" />
+            <VBox prefHeight="25.0" prefWidth="6.0" />
+            <Text fx:id="amount7" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tableHeadingText" wrappingWidth="37.46875" />
+               <ImageView fx:id="res8Pic" fitHeight="25.0" fitWidth="25.0" />
+            <VBox prefHeight="25.0" prefWidth="6.0" />
+            <Text fx:id="amount8" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="37.46875" />
+               <ImageView fx:id="res9Pic" fitHeight="25.0" fitWidth="25.0" />
+            <VBox prefHeight="25.0" prefWidth="6.0" />
+            <Text fx:id="amount9" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="37.46875" />
+         </HBox>
+      </VBox>
+   </HBox>
+   </VBox>
+   <Pane layoutX="304.0" layoutY="37.0" prefHeight="37.0" prefWidth="25.0" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="55.0">
+      <Button fx:id="showConsumption" layoutX="-1.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#showConsumption" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: transparent;" styleClass="goNextBuilding" />
+   </Pane>
+   <Pane layoutX="314.0" layoutY="47.0" prefHeight="37.0" prefWidth="25.0" AnchorPane.leftAnchor="67.0" AnchorPane.topAnchor="55.0">
+      <Button fx:id="showProduction" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#showProduction" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: transparent;" styleClass="goBackBuilding" />
+   </Pane>
+</fx:root>

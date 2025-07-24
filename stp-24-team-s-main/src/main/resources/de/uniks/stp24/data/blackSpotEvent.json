@@ -1,0 +1,25 @@
+{
+  "id": "blackSpot",
+  "event_type": "bad",
+  "duration": 11,
+  "effects": [
+    {
+      "variable": "alloys",
+      "base": 0,
+      "multiplier": 1,
+      "bonus": -10,
+      "condType": null,
+      "condID": null,
+      "effected": null
+    },
+    {
+      "variable": "fuel",
+      "base": 0,
+      "multiplier": 1,
+      "bonus": -20,
+      "condType": "resource",
+      "condID": "credits",
+      "effected": "bonus"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Text?>
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
+         prefWidth="70.0" type="Pane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="de.uniks.stp24.component.game.ClaimingSiteComponent">
+   <ImageView fx:id="siteImage" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+      <effect>
+         <DropShadow height="1.0" offsetX="2.0" offsetY="2.0" radius="0.0" spread="1.0" width="0.0">
+            <color>
+               <Color opacity="0.25"/>
+            </color>
+         </DropShadow>
+      </effect>
+   </ImageView>
+   <Text fx:id="siteCapacityText" layoutX="36.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0"
+         styleClass="numText" text="Text"/>
+</fx:root>

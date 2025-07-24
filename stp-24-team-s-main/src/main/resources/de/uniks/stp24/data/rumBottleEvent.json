@@ -1,0 +1,16 @@
+{
+  "id": "rumBottle",
+  "event_type": "bad",
+  "duration": 21,
+  "effects": [
+    {
+      "variable": "research",
+      "base": -0.5,
+      "multiplier": 0.995,
+      "bonus": 0,
+      "condType": "resource",
+      "condID": "consumer_goods",
+      "effected": "multiplier,base"
+    }
+  ]
+}
